@@ -1,14 +1,20 @@
 <component name="ProjectDictionaryState">
   <dictionary name="Administrator">
     <words>
+      <w>apiread</w>
+      <w>dateadd</w>
+      <w>datename</w>
       <w>daylist</w>
       <w>excle</w>
+      <w>ltrim</w>
       <w>pymssql</w>
       <w>sqldata</w>
       <w>sqltest</w>
       <w>startday</w>
       <w>startyear</w>
+      <w>stdev</w>
       <w>stockchoose</w>
+      <w>xlsx</w>
     </words>
   </dictionary>
 </component>
