@@ -121,14 +121,14 @@ for row in range(1, len(sqldata1) + 1):
         sheet1.write(row, col, sqldata1[row - 1][col])
 # 导出周期内每只股票的收益率
 for i in range(0, len(field2)):
-    sheet2.write(0, i, field1[i][0])
+    sheet2.write(0, i, field2[i])
 for row in range(1, len(finalCode) + 1):
     sheet2.write(row, 0, finalCode[row - 1])
     sheet2.write(row, 1, finalDate[row - 1])
     sheet2.write(row, 2, finalReturn[row - 1])
 # 统计周期内收益情况
 for i in range(0, len(field3)):
-    sheet2.write(0, i + 4, field3[i][0])
+    sheet2.write(0, i + 4, field3[i])
 for row in range(1, len(returnSummary) + 1):
     for col in range(0, len(field3)):
         sheet2.write(row, col + 4, returnSummary[row - 1][col])
