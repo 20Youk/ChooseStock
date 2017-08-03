@@ -7,6 +7,9 @@
       <w>daylist</w>
       <w>excle</w>
       <w>ltrim</w>
+      <w>mshi</w>
+      <w>mshiname</w>
+      <w>mshinew</w>
       <w>pymssql</w>
       <w>sqldata</w>
       <w>sqltest</w>
