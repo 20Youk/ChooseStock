@@ -138,7 +138,7 @@ chart.add_series({
     'name': [u'收益计算', 0, 4],
     'categories': [u'收益计算', 1, 0, len(dayReturn), 0],
     'values': [u'收益计算', 1, 4, len(dayReturn), 4],
-    'line': {'color': 'blue'},
+    'line': {'colorIndex': '23'},
 })
 chart.set_title({'name': u'单位净值'})
 # chart.set_x_axis({'name': u'日期'})

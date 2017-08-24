@@ -1,6 +1,7 @@
 # -*- coding:utf8 -*-
 import pymssql
 import xlwt
+import xlsxwriter
 import datetime
 # 质量选股模型
 server = '192.168.8.200'
@@ -15,6 +16,8 @@ daylist = ('-04-30', '-08-30')
 # daylist = ('-05-01', '-09-01', '-11-01')
 sqldata1 = []
 sqldata2 = []
+field1 = []
+field2 = []
 startyear = 2006
 k = 0
 while k <= 10:
@@ -34,9 +37,9 @@ while k <= 10:
         sqldata2.extend(codeData)
     k += 1
 # 将sql执行结果插入excle
-workbook = xlwt.Workbook(encoding='utf8')
-sheet1 = workbook.add_sheet('sheet1', cell_overwrite_ok=True)
-sheet2 = workbook.add_sheet('sheet2', cell_overwrite_ok=True)
+workbook = xlsxwriter.Workbook('C:\Users\Administrator\Desktop\NewChoose%s.xls' % today)
+sheet1 = workbook.add_worksheet(u'调仓清单')
+sheet2 = workbook.add_worksheet(u'收益计算')
 for i in range(0, len(field1)):
     sheet1.write(0, i, field1[i][0])
 for row in range(1, len(sqldata1) + 1):
@@ -47,6 +50,6 @@ for i in range(0, len(field2)):
 for row in range(1, len(sqldata2) + 1):
     for col in range(0, len(field2)):
         sheet2.write(row, col, sqldata2[row - 1][col])
-workbook.save(r'C:\Users\Administrator\Desktop\NewChoose%s.xls' % today)
+workbook.close()
 conn.close()
 print 'Done!!!'

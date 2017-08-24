@@ -1,23 +1,89 @@
 <component name="ProjectDictionaryState">
   <dictionary name="Administrator">
     <words>
+      <w>adjdict</w>
+      <w>adjlist</w>
+      <w>adjresult</w>
       <w>apiread</w>
+      <w>balanceinfo</w>
+      <w>buylist</w>
+      <w>checkprocexit</w>
+      <w>chicang</w>
+      <w>choosenum</w>
+      <w>codelist</w>
+      <w>codereturn</w>
+      <w>codestring</w>
+      <w>connsqlserver</w>
+      <w>correl</w>
+      <w>dataframe</w>
       <w>dateadd</w>
+      <w>dateeturnlist</w>
+      <w>dateframe</w>
+      <w>datelist</w>
       <w>datename</w>
+      <w>datereturn</w>
+      <w>datereturnlist</w>
       <w>daylist</w>
       <w>excle</w>
+      <w>fdate</w>
+      <w>filepath</w>
+      <w>imagename</w>
+      <w>industrydict</w>
+      <w>industrylist</w>
+      <w>ktem</w>
+      <w>liab</w>
       <w>ltrim</w>
       <w>mshi</w>
       <w>mshiname</w>
       <w>mshinew</w>
+      <w>msie</w>
+      <w>mtem</w>
+      <w>mvlist</w>
+      <w>netbuylist</w>
+      <w>ntem</w>
+      <w>onelist</w>
+      <w>operatesheet</w>
+      <w>pcount</w>
+      <w>pctchg</w>
+      <w>printtext</w>
       <w>pymssql</w>
+      <w>readexcel</w>
+      <w>readfilepath</w>
+      <w>referer</w>
+      <w>resultdict</w>
+      <w>resultframe</w>
+      <w>returnlist</w>
+      <w>seccode</w>
+      <w>sectorconstituent</w>
+      <w>sectorid</w>
+      <w>sheetname</w>
       <w>sqldata</w>
       <w>sqltest</w>
+      <w>standa</w>
       <w>startday</w>
       <w>startyear</w>
       <w>stdev</w>
       <w>stockchoose</w>
+      <w>summvdict</w>
+      <w>summvlist</w>
+      <w>swindustry</w>
+      <w>tasklist</w>
+      <w>tcode</w>
+      <w>tdate</w>
+      <w>totle</w>
+      <w>tradable</w>
+      <w>tradedate</w>
+      <w>valign</w>
+      <w>valuedict</w>
+      <w>valuelist</w>
+      <w>vcenter</w>
+      <w>weightreturn</w>
+      <w>wmain</w>
+      <w>writeintoexcel</w>
+      <w>writewb</w>
+      <w>wset</w>
       <w>xlsx</w>
+      <w>yyyy</w>
     </words>
   </dictionary>
 </component>
