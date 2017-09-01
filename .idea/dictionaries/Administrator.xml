@@ -4,8 +4,11 @@
       <w>adjdict</w>
       <w>adjlist</w>
       <w>adjresult</w>
+      <w>adjresultdict</w>
       <w>apiread</w>
+      <w>atem</w>
       <w>balanceinfo</w>
+      <w>brinson</w>
       <w>buylist</w>
       <w>checkprocexit</w>
       <w>chicang</w>
@@ -24,14 +27,20 @@
       <w>datereturn</w>
       <w>datereturnlist</w>
       <w>daylist</w>
+      <w>daysummv</w>
+      <w>daysummvlist</w>
+      <w>dtem</w>
       <w>excle</w>
       <w>fdate</w>
       <w>filepath</w>
       <w>imagename</w>
+      <w>indsummv</w>
       <w>industrydict</w>
       <w>industrylist</w>
+      <w>indweight</w>
       <w>ktem</w>
       <w>liab</w>
+      <w>ltem</w>
       <w>ltrim</w>
       <w>mshi</w>
       <w>mshiname</w>
@@ -39,6 +48,7 @@
       <w>msie</w>
       <w>mtem</w>
       <w>mvlist</w>
+      <w>netbuy</w>
       <w>netbuylist</w>
       <w>ntem</w>
       <w>onelist</w>
@@ -47,12 +57,14 @@
       <w>pctchg</w>
       <w>printtext</w>
       <w>pymssql</w>
+      <w>raak</w>
       <w>readexcel</w>
       <w>readfilepath</w>
       <w>referer</w>
       <w>resultdict</w>
       <w>resultframe</w>
       <w>returnlist</w>
+      <w>rssk</w>
       <w>seccode</w>
       <w>sectorconstituent</w>
       <w>sectorid</w>
@@ -78,6 +90,7 @@
       <w>valuelist</w>
       <w>vcenter</w>
       <w>weightreturn</w>
+      <w>wirtewb</w>
       <w>wmain</w>
       <w>writeintoexcel</w>
       <w>writewb</w>
