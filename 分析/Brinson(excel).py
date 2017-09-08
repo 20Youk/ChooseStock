@@ -1,4 +1,5 @@
 # -*- coding:utf8 -*-
+# Author: Youk Lin
 # 业绩归因，计算组合每日的行业权重及收益
 # Excel列名：1、日期，2、代码，3、市值，4、当日买入金额， 5、当日净买入金额
 import xlrd

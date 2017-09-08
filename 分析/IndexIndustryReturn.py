@@ -54,12 +54,16 @@ if __name__ == '__main__':
                 select FDate, SecCode, PctChg from StockMovingAvg where SecCode in ('000300.SH', '000905.SH') and FDate >= @fDate
             end
             '''
+    sql3 = '''select a.SecCode2, b.IndustryName1 from SecInfo a, StockIndustry b where a.SecCode2 = b.SecCode and a.SecType = 'A' and b.IndustryType = '1' and b.EndDate is null order by 1 '''
     today = datetime.datetime.now().strftime('%Y%m%d')
     filePath1 = 'C:\Users\Administrator\Desktop\IndexIndRe.xlsx'
     filePath2 = 'C:\Users\Administrator\Desktop\IndexReturn.xlsx'
+    filePath3 = 'C:\Users\Administrator\Desktop\SW_Industry.xlsx'
     sheetName1 = 'Sheet1'
     sqlData1, field1 = connsqlserver(hostName, dataBase, userName, passWord, sql1)
     writeintoexcel(filePath1, sheetName1, field1, sqlData1)
     sqlData2, field2 = connsqlserver(hostName, dataBase, userName, passWord, sql2)
     writeintoexcel(filePath2, sheetName1, field2, sqlData2)
+    sqlData3, field3 = connsqlserver(hostName, dataBase, userName, passWord, sql3)
+    writeintoexcel(filePath3, sheetName1, field3, sqlData3)
     print '执行成功!'
