@@ -3,7 +3,5 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/选股/GetStockChoose" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/../../python/SWIndexPrice.py" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/../../python/publicdate.py" dialect="TSQL" />
   </component>
 </project>
