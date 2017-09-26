@@ -160,7 +160,7 @@ if __name__ == '__main__':
         workSheet.write_row(0, 0, fields)
         k = 0
         for u in range(0, len(urlList)):
-            print '第{0:d}次爬虫获取机构【{1:s}】网址【{2:s}】的相关信息...'.format(u + 1, urlList[u][0], urlList[u][1])
+            print u'第{0:d}次爬虫获取机构【{1:s}】网址【{2:s}】的相关信息...'.format(u + 1, urlList[u][0], urlList[u][1])
             htmlCode = readweb(urlList[u][1])
             oneData = alldata(htmlCode)
             for n in range(0, len(oneData)):
