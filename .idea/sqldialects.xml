@@ -2,6 +2,6 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/选股/GetStockChoose" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/ChooseCode/GetStockChoose" dialect="TSQL" />
   </component>
 </project>

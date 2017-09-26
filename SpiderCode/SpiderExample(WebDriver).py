@@ -18,6 +18,7 @@ class Spider:
         self.driver.get(url)
         # base_msg = self.driver.find_elements_by_xpath('//div[@class="mm-p-info mm-p-base-info"]/ul/li')
         brief = []
+        # 代码来源：页面审查元素，通过元素路径定位
         base_msg = self.driver.find_elements_by_xpath('//span[@class="baseinfo"]/a')
         wait = WebDriverWait(self.driver, 2)
         wait.until(lambda driver: driver.find_element_by_xpath('//div[@id="footer"]'))
