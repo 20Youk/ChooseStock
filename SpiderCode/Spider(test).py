@@ -65,15 +65,19 @@ def alldata(html):
         result3 = re.findall(webPatten3, html)
         item3 = result3[0].split('\t')[2]
         # 基本编码
-        webPatten4 = re.compile('\xe5\x9f\xba\xe6\x9c\xac\xe7\xbc\x96\xe7\xa0\x81</th>.*?<td colspan="2">.*?</td>', re.S)
+        webPatten4 = re.compile('\xe5\x9f\xba\xe6\x9c\xac\xe7\xbc\x96\xe7\xa0\x81</th>.*?<td colspan="2">.*?</td>',
+                                re.S)
         result4 = re.findall(webPatten4, html)
         item4 = result4[0].split('>')[2][:-4]
         # 办理形式
-        webPatten5 = re.compile('\xe5\x8a\x9e\xe7\x90\x86\xe5\xbd\xa2\xe5\xbc\x8f</th>.*?<td colspan="2">.*?</td>', re.S)
+        webPatten5 = re.compile('\xe5\x8a\x9e\xe7\x90\x86\xe5\xbd\xa2\xe5\xbc\x8f</th>.*?<td colspan="2">.*?</td>',
+                                re.S)
         result5 = re.findall(webPatten5, html)
         item5 = result5[0].split('\t')[1][:-2]
         # 实施主体性质
-        webPatten6 = re.compile('\xe5\xae\x9e\xe6\x96\xbd\xe4\xb8\xbb\xe4\xbd\x93\xe6\x80\xa7\xe8\xb4\xa8</th>.*?<td colspan="2">.*?</td>', re.S)
+        webPatten6 = re.compile(
+            '\xe5\xae\x9e\xe6\x96\xbd\xe4\xb8\xbb\xe4\xbd\x93\xe6\x80\xa7\xe8\xb4\xa8</th>.*?<td colspan="2">.*?</td>',
+            re.S)
         result6 = re.findall(webPatten6, html)
         item6 = result6[0].split('\r\n')[4].strip()
         # 材料信息
@@ -96,26 +100,42 @@ def alldata(html):
     else:
         return []
 
+
 if __name__ == '__main__':
-    reload(sys)
-    sys.setdefaultencoding('utf-8')
-    allData = []
-    wb1 = xlrd.open_workbook('../../excel/ReportURL20170926.xlsx')
-    sheet1 = wb1.sheet_by_index(0)
-    groupList = sheet1.col_values(0, start_rowx=1)
-    urlList = sheet1.col_values(1, start_rowx=1)
-    todayStr = datetime.datetime.now().strftime('%Y%m%d')
-    workBook = xlsxwriter.Workbook('../../excel/AllData%s.xlsx' % todayStr)
-    workSheet = workBook.add_worksheet(u'公开信息')
-    fields = [u'部门名称', u'目录名称', u'事项类型', u'基本编码', u'办理形式', u'行使层级', u'实施主体性质', u'材料名称', u'原件份数', u'复印件份数', u'纸质/电子版']
-    workSheet.write_row(0, 0, fields)
-    k = 0
-    for u in range(0, len(urlList)):
-        print u'第{0:d}次爬虫获取机构【{1:s}】网址【{2:s}】的相关信息...'.format(u + 1, groupList[u], urlList[u])
-        htmlCode = readweb(urlList[u])
-        oneData = alldata(htmlCode)
-        for n in range(0, len(oneData)):
-            workSheet.write_row(n + k + 1, 0, oneData[n])
-        k += len(oneData)
-    workBook.close()
-    print 'Done!'
+    try:
+        todayStr = datetime.datetime.now().strftime('%Y%m%d')
+        logFile = open('../../log/log_%s.log' % todayStr, mode='a', buffering=1)
+        reload(sys)
+        sys.setdefaultencoding('utf-8')
+        allData = []
+        wb1 = xlrd.open_workbook('../../excel/ReportURL%s.xlsx' % todayStr)
+        sheet1 = wb1.sheet_by_index(0)
+        groupList = sheet1.col_values(0, start_rowx=1)
+        urlList = sheet1.col_values(1, start_rowx=1)
+        workBook = xlsxwriter.Workbook('../../excel/AllData%s.xlsx' % todayStr)
+        workSheet = workBook.add_worksheet(u'公开信息')
+        fields = [u'部门名称', u'目录名称', u'事项类型', u'基本编码', u'办理形式', u'行使层级', u'实施主体性质', u'材料名称', u'原件份数', u'复印件份数', u'纸质/电子版']
+        workSheet.write_row(0, 0, fields)
+        k = 0
+        for u in range(0, len(urlList)):
+            print u'第{0:d}次爬虫获取机构【{1:s}】网址【{2:s}】的相关信息...'.format(u + 1, groupList[u], urlList[u])
+            logFile.write(u'\n{0:s} : 正在爬虫获取机构【{1:s}】网址【{2:s}】的相关信息...'.format(
+                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                groupList[u], urlList[u]))
+            htmlCode = readweb(urlList[u])
+            oneData = alldata(htmlCode)
+            for n in range(0, len(oneData)):
+                workSheet.write_row(n + k + 1, 0, oneData[n])
+            k += len(oneData)
+            logFile.write(u'\n{0:s} : 成功通过爬虫获取机构【{1:s}】网址【{2:s}】的相关信息...'.format(
+                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                groupList[u], urlList[u]))
+        logFile.close()
+        workBook.close()
+        print 'Done!'
+    except (urllib2.URLError, Exception, IOError), e:
+        print u'程序运行出错,请查看日志'
+        todayStr = datetime.datetime.now().strftime('%Y%m%d')
+        logFile = open('../../log/log_%s.log' % todayStr, mode='a', buffering=1)
+        logFile.write(u'\n{0:s} : {1:s}'.format(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), e))
+        logFile.close()

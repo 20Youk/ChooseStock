@@ -158,17 +158,27 @@ if __name__ == '__main__':
         workSheet = workBook.add_worksheet(u'公开信息')
         fields = [u'部门名称', u'目录名称', u'事项类型', u'基本编码', u'办理形式', u'行使层级', u'实施主体性质', u'材料名称', u'原件份数', u'复印件份数', u'纸质/电子版']
         workSheet.write_row(0, 0, fields)
+        logFile = open('../../log/log_%s.log' % todayStr, mode='a', buffering=1)
         k = 0
         for u in range(0, len(urlList)):
             print u'第{0:d}次爬虫获取机构【{1:s}】网址【{2:s}】的相关信息...'.format(u + 1, urlList[u][0], urlList[u][1])
+            logFile.write(u'\n{0:s} : 正在通过爬虫获取机构【{1:s}】网址【{2:s}】的相关信息...'.format(
+                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                urlList[u][0], urlList[u][1]))
             htmlCode = readweb(urlList[u][1])
             oneData = alldata(htmlCode)
             for n in range(0, len(oneData)):
                 workSheet.write_row(n + k + 1, 0, oneData[n])
             k += len(oneData)
+            logFile.write(u'\n{0:s} : 成功通过爬虫获取机构【{1:s}】网址【{2:s}】的相关信息...'.format(
+                datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                urlList[u][0], urlList[u][1]))
         workBook.close()
-    except urllib2.URLError, e:
-        if hasattr(e, "code"):
-            print e.code
-        if hasattr(e, "reason"):
-            print e.reason
+        logFile.write(u'\n{0: s}: 执行完成!!!'.format(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+        logFile.close()
+    except (urllib2.URLError, Exception, IOError), e:
+        print u'程序运行出错,请查看日志'
+        todayStr = datetime.datetime.now().strftime('%Y%m%d')
+        logFile = open('../../log/log_%s.log' % todayStr, mode='a', buffering=1)
+        logFile.write(u'\n{0:s} : {1:s}'.format(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), e))
+        logFile.close()
