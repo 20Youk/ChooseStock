@@ -66,7 +66,7 @@ def kdj(sqldata, n, m1, m2, keepvalue):
                 kdvaluedata[6].append(np.nan)
     kdvalueframe = pd.DataFrame(list(kdvaluedata), columns=['date', 'code', 'avgprice', 'close', 'rsv', 'kvalue', 'dvalue'])
     kdvalueframe['jvalue'] = kdvalueframe['kvalue'] * 3 - kdvalueframe['dvalue'] * 2
-    # 筛选条件: D值大于80,调仓结果
+    # 筛选条件: J值大于80,调仓结果
     kdframe = kdvalueframe[(np.isnan(kdvalueframe.jvalue) == False) & (kdvalueframe.jvalue > keepvalue)]
     # 计算收益
     dateList = list(kdframe.date.drop_duplicats())
