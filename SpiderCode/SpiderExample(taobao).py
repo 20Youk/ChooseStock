@@ -3,7 +3,7 @@ import re
 import urllib2
 import os
 import datetime
-from selenium import webdriver
+from selenium_test import webdriver
 
 
 class Spider:

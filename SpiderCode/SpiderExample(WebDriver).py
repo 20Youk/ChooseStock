@@ -1,6 +1,6 @@
 # -*- coding:utf8 -*-
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium_test import webdriver
+from selenium_test.webdriver.support.ui import WebDriverWait
 
 
 class Spider:

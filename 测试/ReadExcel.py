@@ -16,16 +16,23 @@
 #         mvList.append(item[8])
 #         buyList.append(item[10])
 #         netList.append(item[12])
-import xlrd
-import tkFileDialog as tk
-# filename = tk.askopenfilenames(initialdir='C:/')
-filepath = tk.askdirectory(initialdir='.')
-print filepath
-wb = xlrd.open_workbook('..\..\excel\chicang.xlsx')
-sheet = wb.sheet_by_index(0)
-dateList = sheet.col_values(1, start_rowx=1)
-codeList = sheet.col_values(6, start_rowx=1)
-mvList = sheet.col_values(8, start_rowx=1)
-buyList = sheet.col_values(10, start_rowx=1)
-netList = sheet.col_values(12, start_rowx=1)
-print 'Done!'
+# import xlrd
+# import tkFileDialog as tk
+# # filename = tk.askopenfilenames(initialdir='C:/')
+# filepath = tk.askdirectory(initialdir='.')
+# print filepath
+# wb = xlrd.open_workbook('..\..\excel\chicang.xlsx')
+# sheet = wb.sheet_by_index(0)
+# dateList = sheet.col_values(1, start_rowx=1)
+# codeList = sheet.col_values(6, start_rowx=1)
+# mvList = sheet.col_values(8, start_rowx=1)
+# buyList = sheet.col_values(10, start_rowx=1)
+# netList = sheet.col_values(12, start_rowx=1)
+# print 'Done!'
+
+import xlsxwriter, datetime
+today = datetime.datetime.now().strftime('%Y%m%d')
+wb = xlsxwriter.Workbook(r'C:\Users\Administrator\Desktop\HDF\test%s.xlsx' % today)
+sheet = wb.add_worksheet('1')
+sheet.write(0, 0, 'test')
+wb.close()

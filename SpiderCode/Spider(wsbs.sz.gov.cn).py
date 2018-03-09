@@ -2,8 +2,8 @@
 # Author: Youk.Lin
 import urllib2
 import re
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium_test import webdriver
+from selenium_test.webdriver.support.ui import WebDriverWait
 import xlsxwriter
 import datetime
 import sys
