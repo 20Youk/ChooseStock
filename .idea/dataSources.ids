@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="SQL Server (Microsoft) - PortfolioData@winserver2016" uuid="8db1f371-6aeb-4b47-bcde-c307725bce93">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

@@ -11,10 +11,11 @@ import sys
 # 获取医生和网址
 site_list = []
 try:
+    print
     reload(sys)
     sys.setdefaultencoding('utf-8')
-    for jj in range(1, 9):
-        url = 'http://haoping.haodf.com/keshi/2009000/daifu_guangdong_' + str(jj) + '.htm'
+    for jj in range(1, 3):
+        url = 'http://haoping.haodf.com/keshi/3015000/daifu_guangdong_' + str(jj) + '.htm'
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:2.0.1) Gecko/20100101 Firefox/4.0.1'}
         request = urllib2.Request(url, headers=headers)
         website = urllib2.urlopen(request)
