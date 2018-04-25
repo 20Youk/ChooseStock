@@ -1,4 +1,4 @@
-# -*-coding:utf8-*-
+# -*- coding:utf8 -*-
 # Author : Youk
 # Description : 将好大夫官网的医生信息，按照病例数和投票数整理成数据表格
 import xlrd

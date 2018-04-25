@@ -13,8 +13,8 @@ import time
 
 def login_mail(url, username, password):
     chrome_options = Options()
-    # chrome_options.add_argument('--headless')
-    chrome_options.add_argument('disable-gpu')
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--disable-gpu')
     driver = webdriver.Chrome(options=chrome_options)
     driver.get(url=url)
     driver.find_element_by_id('inputuin').clear()

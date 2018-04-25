@@ -4,14 +4,28 @@
     <bookmark url="file://$PROJECT_DIR$/wechat/Mail_rec_new.py" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adefb50d-e565-45cb-b578-bfee0ad229a6" name="默认的" comment="增加微信机器人测试代码">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wechat/Mail_rec.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wechat/Mail_rec_new.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/测试/EMS_rec.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/测试/ImageToString.py" />
+    <list default="true" id="adefb50d-e565-45cb-b578-bfee0ad229a6" name="默认的" comment="扫描邮件通过微信通知">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Analysis/baoli_baseOP.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Api/EMS_API.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Api/kdniao_api.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/kdniao_api.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/piaoju_date.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/wechat_send.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DoctorsData/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/测试/excel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/测试/logging_test.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wechat/itchat.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wechat/wechat_send.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/测试/EMS_rec.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SpiderCode/Spider_haodf.py" afterPath="$PROJECT_DIR$/DoctorsData/Spider_haodf.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WindApi/__init__.py" afterPath="$PROJECT_DIR$/Api/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/测试/Op_data.py" afterPath="$PROJECT_DIR$/DoctorsData/Op_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat/itchat.pkl" afterPath="$PROJECT_DIR$/wechat/itchat.pkl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat/wechat_send.py" afterPath="$PROJECT_DIR$/wechat/wechat_send.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat/Mail_rec_new.py" afterPath="$PROJECT_DIR$/wechat/Mail_rec_new.py" />
     </list>
     <ignored path="ChooseStock.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,17 +41,24 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ChooseStock$wechat_getfriends.coverage" NAME="wechat_getfriends Coverage Results" MODIFIED="1523175005493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
     <SUITE FILE_PATH="coverage/ChooseStock$Mail_rec.coverage" NAME="Mail_rec Coverage Results" MODIFIED="1523582991399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
-    <SUITE FILE_PATH="coverage/ChooseStock$EMS_rec.coverage" NAME="EMS_rec Coverage Results" MODIFIED="1523528135984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
+    <SUITE FILE_PATH="coverage/ChooseStock$EMS_rec.coverage" NAME="EMS_rec Coverage Results" MODIFIED="1524556328362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
+    <SUITE FILE_PATH="coverage/ChooseStock$EMS_ScreenShot.coverage" NAME="EMS_ScreenShot Coverage Results" MODIFIED="1524636295893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
     <SUITE FILE_PATH="coverage/ChooseStock$selenium_test.coverage" NAME="selenium_test Coverage Results" MODIFIED="1520578049028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderCode" />
+    <SUITE FILE_PATH="coverage/ChooseStock$excel.coverage" NAME="excel Coverage Results" MODIFIED="1524201483057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
+    <SUITE FILE_PATH="coverage/ChooseStock$baoli_baseOP.coverage" NAME="baoli_baseOP Coverage Results" MODIFIED="1524538389660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Analysis" />
+    <SUITE FILE_PATH="coverage/ChooseStock$logging.coverage" NAME="logging Coverage Results" MODIFIED="1524622515907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
     <SUITE FILE_PATH="coverage/ChooseStock$get_text.coverage" NAME="get_text Coverage Results" MODIFIED="1523259949095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
     <SUITE FILE_PATH="coverage/ChooseStock$Mail_rec_new.coverage" NAME="Mail_rec_new Coverage Results" MODIFIED="1523866964593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
     <SUITE FILE_PATH="coverage/ChooseStock$ReadExcel.coverage" NAME="ReadExcel Coverage Results" MODIFIED="1523439062853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
     <SUITE FILE_PATH="coverage/ChooseStock$selenium.coverage" NAME="selenium Coverage Results" MODIFIED="1520498682542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderCode" />
     <SUITE FILE_PATH="coverage/ChooseStock$ImageToString.coverage" NAME="ImageToString Coverage Results" MODIFIED="1523522823558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
+    <SUITE FILE_PATH="coverage/ChooseStock$EMS_API.coverage" NAME="EMS_API Coverage Results" MODIFIED="1524044316267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Api" />
     <SUITE FILE_PATH="coverage/ChooseStock$wechat_test.coverage" NAME="wechat_test Coverage Results" MODIFIED="1522831721280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
+    <SUITE FILE_PATH="coverage/ChooseStock$kdniao_api.coverage" NAME="kdniao_api Coverage Results" MODIFIED="1524535545214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Api" />
     <SUITE FILE_PATH="coverage/ChooseStock$Op_data.coverage" NAME="Op_data Coverage Results" MODIFIED="1521192436487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
     <SUITE FILE_PATH="coverage/ChooseStock$WeChatRobot.coverage" NAME="WeChatRobot Coverage Results" MODIFIED="1523270724228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
     <SUITE FILE_PATH="coverage/ChooseStock$wechat_send.coverage" NAME="wechat_send Coverage Results" MODIFIED="1523863567527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
+    <SUITE FILE_PATH="coverage/ChooseStock$logging_test.coverage" NAME="logging_test Coverage Results" MODIFIED="1524623311681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
     <SUITE FILE_PATH="coverage/ChooseStock$Spider_haodf.coverage" NAME="Spider_haodf Coverage Results" MODIFIED="1520844857532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderCode" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -49,52 +70,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Mail_rec.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wechat/Mail_rec.py">
+      <file leaf-file-name="EMS_ScreenShot.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state vertical-scroll-proportion="1.3571428">
+              <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
               <folding>
-                <element signature="e#40#55#0" expanded="true" />
+                <element signature="e#68#89#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mail_rec_new.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wechat/Mail_rec_new.py">
+      <file leaf-file-name="logging_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/测试/logging_test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="44" selection-start-line="31" selection-start-column="4" selection-end-line="35" selection-end-column="44" />
+              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding>
-                <element signature="e#60#90#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wechat_send.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wechat/wechat_send.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7205589">
-              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-              <folding>
-                <element signature="e#20#33#0" expanded="true" />
-                <marker date="1523877565826" expanded="true" signature="139:280" placeholder="select t.Cod... T_OERS" />
-                <marker date="1523877565826" expanded="true" signature="139:281" placeholder="select t.Cod... T_OERS" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="业绩归因(数据库获取行业).py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Analysis/业绩归因(数据库获取行业).py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#89#100#0" expanded="true" />
-                <marker date="1523877606200" expanded="true" signature="3403:3514" placeholder="select SecCo... StockIndustry" />
+                <element signature="e#51#65#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,7 +112,6 @@
         <option value="$PROJECT_DIR$/SpiderCode/selenium.py" />
         <option value="$PROJECT_DIR$/SpiderCode/selenium_test.py" />
         <option value="$PROJECT_DIR$/SpiderCode/Spider_haodf.py" />
-        <option value="$PROJECT_DIR$/测试/Op_data.py" />
         <option value="$PROJECT_DIR$/测试/wechat_test.py" />
         <option value="$PROJECT_DIR$/测试/wechat_send.py" />
         <option value="$PROJECT_DIR$/测试/wechat_getfriends.py" />
@@ -127,13 +120,25 @@
         <option value="$PROJECT_DIR$/wechat/WeChatRobot.py" />
         <option value="$PROJECT_DIR$/测试/ReadExcel.py" />
         <option value="C:/Python27/Lib/site-packages/pytesser/__init.py__" />
-        <option value="$PROJECT_DIR$/测试/EMS_rec.py" />
         <option value="$PROJECT_DIR$/测试/ImageToString.py" />
         <option value="$PROJECT_DIR$/wechat/Mail_rec.py" />
         <option value="$PROJECT_DIR$/SpiderCode/Spider(wsbs.sz.gov.cn).py" />
         <option value="$PROJECT_DIR$/Analysis/业绩归因(数据库获取行业).py" />
-        <option value="$PROJECT_DIR$/wechat/Mail_rec_new.py" />
         <option value="$PROJECT_DIR$/wechat/wechat_send.py" />
+        <option value="$PROJECT_DIR$/Api/EMS_API.py" />
+        <option value="$PROJECT_DIR$/Api/kdniao_api.py" />
+        <option value="$PROJECT_DIR$/测试/excel.py" />
+        <option value="$PROJECT_DIR$/Analysis/baoli_baseOP.py" />
+        <option value="$PROJECT_DIR$/wechat/Mail_rec_new.py" />
+        <option value="$PROJECT_DIR$/SpiderCode/SpiderExample(taobao).py" />
+        <option value="$PROJECT_DIR$/测试/EMS_rec.py" />
+        <option value="$PROJECT_DIR$/DZHBL/piaoju_date.py" />
+        <option value="$PROJECT_DIR$/测试/Op_data.py" />
+        <option value="$PROJECT_DIR$/测试/mkdir.py" />
+        <option value="$PROJECT_DIR$/测试/logging.py" />
+        <option value="$PROJECT_DIR$/测试/logging_test.py" />
+        <option value="$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py" />
+        <option value="$PROJECT_DIR$/.idea/dictionaries/Sally_Wang.xml" />
       </list>
     </option>
   </component>
@@ -203,30 +208,6 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Users">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Sally Wang">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT=".PyCharm50">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="system">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="python_stubs">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="-762174762">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -247,7 +228,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="测试">
+            <PATH_ELEMENT USER_OBJECT="DZHBL">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -261,7 +242,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="wechat">
+            <PATH_ELEMENT USER_OBJECT=".idea">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -285,46 +266,31 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\MyProgram\ChooseStock\wechat" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProgram\ChooseStock\DZHBL" />
       <recent name="C:\YoukWork\ChooseStock\SpiderCode" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MyProgram\ChooseStock\DZHBL" />
+      <recent name="C:\MyProgram\ChooseStock\DoctorsData" />
+      <recent name="C:\MyProgram\ChooseStock\wechat" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.Mail_rec_new">
-    <configuration default="false" name="Mail_rec" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.EMS_ScreenShot">
+    <configuration default="false" name="baoli_baseOP" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wechat" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ChooseStock" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wechat/Mail_rec.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ImageToString" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/测试" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ChooseStock" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/测试/ImageToString.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Analysis/baoli_baseOP.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -342,43 +308,61 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ChooseStock" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/测试/EMS_rec.py" />
+      <option name="SCRIPT_NAME" value="C:\MyProgram\ChooseStock\DZHBL\EMS_ScreenShot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Mail_rec_new" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="logging" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wechat" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/测试" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ChooseStock" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wechat/Mail_rec_new.py" />
+      <option name="SCRIPT_NAME" value="C:\MyProgram\ChooseStock\测试\logging_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="wechat_send" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="EMS_ScreenShot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wechat" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DZHBL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ChooseStock" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wechat/wechat_send.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="logging_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/测试" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ChooseStock" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/测试/logging_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -577,19 +561,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Mail_rec" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ImageToString" />
-      <item index="2" class="java.lang.String" itemvalue="Python.EMS_rec" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Mail_rec_new" />
-      <item index="4" class="java.lang.String" itemvalue="Python.wechat_send" />
+      <item index="0" class="java.lang.String" itemvalue="Python.baoli_baseOP" />
+      <item index="1" class="java.lang.String" itemvalue="Python.EMS_rec" />
+      <item index="2" class="java.lang.String" itemvalue="Python.logging" />
+      <item index="3" class="java.lang.String" itemvalue="Python.EMS_ScreenShot" />
+      <item index="4" class="java.lang.String" itemvalue="Python.logging_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Mail_rec_new" />
-        <item index="1" class="java.lang.String" itemvalue="Python.wechat_send" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Mail_rec" />
+        <item index="0" class="java.lang.String" itemvalue="Python.EMS_ScreenShot" />
+        <item index="1" class="java.lang.String" itemvalue="Python.logging_test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.logging" />
         <item index="3" class="java.lang.String" itemvalue="Python.EMS_rec" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ImageToString" />
+        <item index="4" class="java.lang.String" itemvalue="Python.baoli_baseOP" />
       </list>
     </recent_temporary>
   </component>
@@ -622,21 +606,36 @@
       <option name="project" value="LOCAL" />
       <updated>1523322183705</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="扫描邮件通过微信通知">
+      <created>1523877662846</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523877662846</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42578548" sideWeight="0.49840382" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42578548" sideWeight="0.49840382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.30511183" sideWeight="0.50159615" order="7" side_tool="true" content_ui="tabs" x="655" y="505" width="1250" height="382" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.49840382" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719395" sideWeight="0.49840382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2713348" sideWeight="0.49840382" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18496802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2708559" sideWeight="0.49840382" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15671642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -668,7 +667,8 @@
     <MESSAGE value="好大夫数据爬虫" />
     <MESSAGE value="将好大夫数据按照病例数和投票数整理成数据表格" />
     <MESSAGE value="增加微信机器人测试代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加微信机器人测试代码" />
+    <MESSAGE value="扫描邮件通过微信通知" />
+    <option name="LAST_COMMIT_MESSAGE" value="扫描邮件通过微信通知" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -698,6 +698,16 @@
           <line>135</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/SpiderCode/SpiderExample(taobao).py</url>
+          <line>1</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -706,98 +716,18 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="79" />
+      <option name="time" value="106" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="[item.text for item in base_times]" />
-        <watch expression="base_times[0]" language="Python" />
-        <watch expression="base_receivers[0]" language="Python" />
-        <watch expression="item_1" language="Python" />
-        <watch expression="[item.text for item in base_subjects]" />
+        <watch expression="str(int(mailNumList[0]))" language="Python" />
+        <watch expression="mailNum" language="Python" />
+        <watch expression="driver.find_elements_by_css_selector(css_selector='singleErrors')" language="Python" />
+        <watch expression="e.strerror" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/测试/ReadExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="30" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试/Op_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider_haodf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/selenium_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试/ReadExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="30" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试/Op_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider_haodf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="75" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/selenium_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试/ReadExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="30" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试/Op_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider(wsbs.sz.gov.cn).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="138" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SpiderCode/Spider(test).py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -805,36 +735,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider_haodf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="75" selection-start-line="61" selection-start-column="75" selection-end-line="61" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/selenium_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider(wsbs.sz.gov.cn).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="138" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider(test).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="20" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider_haodf.py">
+    <entry file="file://$PROJECT_DIR$/DoctorsData/Spider_haodf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
@@ -863,7 +764,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider_haodf.py">
+    <entry file="file://$PROJECT_DIR$/DoctorsData/Spider_haodf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -905,13 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/测试/Op_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12431843">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/测试/checkprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -936,34 +830,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat/wechat_getfriends.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding>
-            <element signature="e#20#33#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wechat/WeChatRobot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2928082">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis/Analysis(计算收益).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试/ReadExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6115843">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="e#38#51#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1006,27 +879,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
           <folding>
-            <element signature="e#23#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider_haodf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#41#55#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试/EMS_rec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#38#0" expanded="false" />
+            <element signature="e#23#44#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1063,17 +916,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider(wsbs.sz.gov.cn).py">
+    <entry file="file://$PROJECT_DIR$/Analysis/Analysis(计算收益).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1585366">
-          <caret line="69" column="49" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#41#55#0" expanded="false" />
+            <element signature="e#80#91#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChooseCode/GetStockChoose">
+    <entry file="file://$PROJECT_DIR$/ChooseCode/QualityWeight.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3006756">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="6" />
+          <folding>
+            <marker date="1522825215663" expanded="true" signature="1687:2010" placeholder="select a.FDa... StockMovingAvg" />
+            <marker date="1522825215663" expanded="true" signature="1820:1888" placeholder="select top 1... TradeDay" />
+            <marker date="1522825215663" expanded="true" signature="1906:1974" placeholder="select top 1... TradeDay" />
+            <marker date="1522825215663" expanded="true" signature="2034:2277" placeholder="select a.FDa... StockMovingAvg" />
+            <marker date="1522825215663" expanded="true" signature="2126:2192" placeholder="select top 1... TradeDay" />
+            <marker date="1522825215663" expanded="true" signature="2210:2276" placeholder="select top 1... TradeDay" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChooseCode/GetNewChoose.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/wechat_getfriends.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/IndexIndustryReturn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522825215653" expanded="true" signature="3955:4128" placeholder="select a.Sec... SecInfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/测试/ReadExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.66866267">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/测试/设置Excel格式模板.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1081,13 +983,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat/Mail_rec.py">
+    <entry file="file://$PROJECT_DIR$/测试/WinOs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="e#40#55#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,24 +1002,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat/Mail_rec_new.py">
+    <entry file="file://$PROJECT_DIR$/Analysis/TradeAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="44" selection-start-line="31" selection-start-column="4" selection-end-line="35" selection-end-column="44" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/测试/excel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7381757">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#47#64#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpiderCode/SpiderExample(taobao).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="24" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="24" />
+          <folding>
+            <element signature="e#21#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/baoli_baseOP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7406832">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/kdniao_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="104" selection-start-line="135" selection-start-column="104" selection-end-line="135" selection-end-column="104" />
+          <folding>
+            <element signature="e#47#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Api/EMS_API.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#57#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/piaoju_date.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DoctorsData/Op_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DoctorsData/Spider_haodf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/wechat_send.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding>
+            <marker date="1523954872742" expanded="true" signature="202:343" placeholder="select t.Cod... T_OERS" />
+            <marker date="1523954872742" expanded="true" signature="202:344" placeholder="select t.Cod... T_OERS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/Mail_rec_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.242236">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#60#90#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat/wechat_send.py">
+    <entry file="file://$PROJECT_DIR$/wechat/Mail_rec.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7205589">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        <state vertical-scroll-proportion="-0.7080745">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/kdniao_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3213573">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider(wsbs.sz.gov.cn).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="138" selection-end-column="39" />
           <folding>
-            <element signature="e#20#33#0" expanded="true" />
-            <marker date="1523877565826" expanded="true" signature="139:280" placeholder="select t.Cod... T_OERS" />
-            <marker date="1523877565826" expanded="true" signature="139:281" placeholder="select t.Cod... T_OERS" />
+            <element signature="e#41#55#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/测试/logging_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <element signature="e#51#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3571428">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding>
+            <element signature="e#68#89#0" expanded="true" />
           </folding>
         </state>
       </provider>
