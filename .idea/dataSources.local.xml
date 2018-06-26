@@ -4,5 +4,11 @@
     <data-source name="SQL Server (Microsoft) - PortfolioData@winserver2016" uuid="8db1f371-6aeb-4b47-bcde-c307725bce93">
       <secret-storage>memory</secret-storage>
     </data-source>
+    <data-source name="MySQL - GCCFSI@39.108.218.254" uuid="3bac79a5-7dcd-43cf-b133-eea56b5e8f4d">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>GCCFSI.*</schema-pattern>
+      <default-schemas>GCCFSI.*</default-schemas>
+    </data-source>
   </component>
 </project>

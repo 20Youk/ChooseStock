@@ -13,6 +13,7 @@ from xlutils import copy
 import xlsxwriter
 import os
 
+
 # 设置文件路径
 page_path = r'..\..\file\base\screenshot.png'
 image_path = r'..\..\file\base\code.png'

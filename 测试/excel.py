@@ -15,7 +15,7 @@ wb = xlsxwriter.Workbook('../../file/data_result.xlsx')
 ws = wb.add_worksheet('Sheet1')
 ws.write_row(0, 0, field)
 for k in range(0, len(data)):
-    ws.write_row(k+1, 0, data[k])
+    ws.write_row(k + 1, 0, data[k])
 date_style = wb.add_format()
 date_style.set_num_format('YYYY-MM-DD')
 ws.set_column('B:B'

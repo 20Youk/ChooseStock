@@ -41,6 +41,8 @@ for i in range(1, len(supplier_list)):
         startDate = startDate_list[i]
         endDate = endDate_list[i]
         continue
+if endDate < today_int:
+    result_data.append([supplier, hotel, endDate + 1, today_int])
 wb_1 = xlsxwriter.Workbook('../../file/baoli_date.xlsx')
 ws_1 = wb_1.add_worksheet(u'供应商未融资日期分布')
 dateType = wb_1.add_format()

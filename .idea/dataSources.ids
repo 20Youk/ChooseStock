@@ -3,4 +3,230 @@
   <data-source name="SQL Server (Microsoft) - PortfolioData@winserver2016" uuid="8db1f371-6aeb-4b47-bcde-c307725bce93">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source name="MySQL - GCCFSI@39.108.218.254" uuid="3bac79a5-7dcd-43cf-b133-eea56b5e8f4d">
+    <database-info product="MySQL" version="5.5.60" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="GCCFSI"/>
+      <table id="2" parent="1" name="SupplierInfo"/>
+      <table id="3" parent="1" name="IndustryInfo"/>
+      <table id="4" parent="1" name="HotelIncome"/>
+      <table id="5" parent="1" name="HotelInfo"/>
+      <table id="6" parent="1" name="SupplierInfo_bak180522"/>
+      <table id="7" parent="1" name="SupplierCommunication"/>
+      <column id="8" parent="2" name="SupplierCode">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="9" parent="2" name="SupplierName">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="10" parent="2" name="Contact1">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="11" parent="2" name="TelPhone1">
+        <data-type>char(25)</data-type>
+      </column>
+      <column id="12" parent="2" name="TelPhone2">
+        <data-type>char(25)</data-type>
+      </column>
+      <column id="13" parent="2" name="Mail1">
+        <data-type>char(30)</data-type>
+      </column>
+      <column id="14" parent="2" name="Industry">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="15" parent="2" name="City">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="16" parent="2" name="Contact2">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="17" parent="2" name="Mail2">
+        <data-type>char(30)</data-type>
+      </column>
+      <column id="18" parent="2" name="Contact3">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="19" parent="2" name="TelPhone3">
+        <data-type>char(25)</data-type>
+      </column>
+      <column id="20" parent="2" name="Mail3">
+        <data-type>char(30)</data-type>
+      </column>
+      <column id="21" parent="2" name="Contact4">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="22" parent="2" name="TelPhone4">
+        <data-type>char(25)</data-type>
+      </column>
+      <column id="23" parent="2" name="Mail4">
+        <data-type>char(30)</data-type>
+      </column>
+      <column id="24" parent="2" name="RegisteredCapital">
+        <data-type>decimal(18,8)</data-type>
+      </column>
+      <column id="25" parent="2" name="EmployeeNum">
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="26" parent="2" name="Litigation">
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="27" parent="2" name="RegisteredCurrency">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="28" parent="2" name="Fax">
+        <data-type>char(20)</data-type>
+      </column>
+      <key id="29" parent="2" name="PRIMARY">
+        <columns>SupplierCode</columns>
+        <primary>1</primary>
+      </key>
+      <column id="30" parent="3" name="IndustryCode0">
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="31" parent="3" name="IndustryName0">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="32" parent="3" name="IndustryCode1">
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="33" parent="3" name="IndustryName1">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="34" parent="4" name="Hotel">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="35" parent="4" name="RMonth">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="36" parent="4" name="OccupancyRate">
+        <data-type>decimal(18,6)</data-type>
+      </column>
+      <column id="37" parent="4" name="BanquetIncome">
+        <data-type>decimal(18,2)</data-type>
+      </column>
+      <key id="38" parent="4" name="PRIMARY">
+        <columns>Hotel
+RMonth</columns>
+        <primary>1</primary>
+      </key>
+      <column id="39" parent="5" name="HotelName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="40" parent="5" name="ShortName">
+        <data-type>char(20)</data-type>
+      </column>
+      <key id="41" parent="5" name="PRIMARY">
+        <columns>HotelName</columns>
+        <primary>1</primary>
+      </key>
+      <column id="42" parent="6" name="SupplierCode">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="43" parent="6" name="SupplierName">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="44" parent="6" name="Contact1">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="45" parent="6" name="TelPhone1">
+        <data-type>char(15)</data-type>
+      </column>
+      <column id="46" parent="6" name="TelPhone2">
+        <data-type>char(15)</data-type>
+      </column>
+      <column id="47" parent="6" name="Mail1">
+        <data-type>char(30)</data-type>
+      </column>
+      <column id="48" parent="6" name="Industry">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="49" parent="6" name="City">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="50" parent="6" name="Contact2">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="51" parent="6" name="Mail2">
+        <data-type>char(30)</data-type>
+      </column>
+      <column id="52" parent="6" name="Contact3">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="53" parent="6" name="TelPhone3">
+        <data-type>char(15)</data-type>
+      </column>
+      <column id="54" parent="6" name="Mail3">
+        <data-type>char(30)</data-type>
+      </column>
+      <column id="55" parent="6" name="Contact4">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="56" parent="6" name="TelPhone4">
+        <data-type>char(15)</data-type>
+      </column>
+      <column id="57" parent="6" name="Mail4">
+        <data-type>char(30)</data-type>
+      </column>
+      <column id="58" parent="6" name="RegisteredCapital">
+        <data-type>decimal(18,8)</data-type>
+      </column>
+      <column id="59" parent="6" name="EmployeeNum">
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="60" parent="6" name="Litigation">
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="61" parent="6" name="RegisteredCurrency">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="62" parent="6" name="Fax">
+        <data-type>char(20)</data-type>
+      </column>
+      <column id="63" parent="7" name="WorkNum">
+        <mandatory>1</mandatory>
+        <data-type>char(50)</data-type>
+      </column>
+      <column id="64" parent="7" name="Informant">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="65" parent="7" name="Department">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="66" parent="7" name="InformantTime">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="67" parent="7" name="VisitObject">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="68" parent="7" name="Company">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="69" parent="7" name="VisitType">
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="70" parent="7" name="Content">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="71" parent="7" name="Remark">
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="72" parent="7" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="73" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
 </component>

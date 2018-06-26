@@ -1,4 +1,4 @@
-# -*-coding:utf8-*-
+# -*- coding:utf8 -*-
 # Author:Youk.Lin
 # 微信实时保存群内图片和附件
 import itchat
@@ -8,10 +8,11 @@ import os
 import sys
 from datetime import datetime
 
-itchat.auto_login(enableCmdQR=True, hotReload=True)
+itchat.auto_login(enableCmdQR=False, hotReload=True)
 
 
-@itchat.msg_register([PICTURE, ATTACHMENT], isGroupChat=True)
+# @itchat.msg_register([PICTURE, ATTACHMENT], isGroupChat=True)
+@itchat.msg_register([ATTACHMENT], isGroupChat=True)
 def gchat(msg):
     if msg['FileName'][-4:] == '.gif':
         return
@@ -35,7 +36,7 @@ def gchat(msg):
 
 if __name__ == '__main__':
     reload(sys)
-    sys.setdefaultencoding("utf-8")
+    sys.setdefaultencoding("gbk")
     try:
         itchat.run()
     except (KeyboardInterrupt, IOError, Exception), e:

@@ -135,8 +135,8 @@ if __name__ == '__main__':
                 logFile.write('{0:s} : 成功获取运单{1:d}状态...\n'.format(
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), int(float(num_list[i]))))
         wb.save(filePath)
-        print 'Done!!!'
         logFile.close()
+        print 'Done'
     except (urllib2.URLError, Exception, IOError), e:
         print u'程序运行错误，请检查！'
         logFile = open(logPath, mode='a', buffering=1)

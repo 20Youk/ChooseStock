@@ -4,28 +4,42 @@
     <bookmark url="file://$PROJECT_DIR$/wechat/Mail_rec_new.py" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adefb50d-e565-45cb-b578-bfee0ad229a6" name="默认的" comment="扫描邮件通过微信通知">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Analysis/baoli_baseOP.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Api/EMS_API.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Api/kdniao_api.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/kdniao_api.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/piaoju_date.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/wechat_send.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DoctorsData/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/测试/excel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/测试/logging_test.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wechat/itchat.pkl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wechat/wechat_send.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/测试/EMS_rec.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SpiderCode/Spider_haodf.py" afterPath="$PROJECT_DIR$/DoctorsData/Spider_haodf.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WindApi/__init__.py" afterPath="$PROJECT_DIR$/Api/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/测试/Op_data.py" afterPath="$PROJECT_DIR$/DoctorsData/Op_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+    <list default="true" id="adefb50d-e565-45cb-b578-bfee0ad229a6" name="默认的" comment="新增EMS接口查询脚本">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/enterprise_data.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Sally_Wang.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/BatchSpider.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/BatchSpider_self.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/Data_loan.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/Docx-test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/Get_EMS.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/HR_Doc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/HR_Production.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/Hotel_Rebate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/ImageAnalysis.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/Load_DZHBL_RZSQ.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/Load_DZHBL_sql.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/Mysql_Insert_HotelIncome.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/Mysql_Insert_IndustryInfo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/Mysql_Insert_SupplierCommucation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/Mysql_Insert_SupplierInfo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/Mysql_Update_IndustryInfo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/RZSQ_Get_file.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/loadData.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/rename.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DZHBL/ruiji.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DoctorsData/itchat.pkl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DoctorsData/wechat_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wechat/itchat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/测试/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat/Mail_rec_new.py" afterPath="$PROJECT_DIR$/wechat/Mail_rec_new.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py" afterPath="$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DZHBL/kdniao_api.py" afterPath="$PROJECT_DIR$/DZHBL/kdniao_api.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DZHBL/piaoju_date.py" afterPath="$PROJECT_DIR$/DZHBL/piaoju_date.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat/get_text.py" afterPath="$PROJECT_DIR$/wechat/get_text.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/测试/excel.py" afterPath="$PROJECT_DIR$/测试/excel.py" />
     </list>
     <ignored path="ChooseStock.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,30 +53,72 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ChooseStock$wechat_getfriends.coverage" NAME="wechat_getfriends Coverage Results" MODIFIED="1523175005493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
     <SUITE FILE_PATH="coverage/ChooseStock$Mail_rec.coverage" NAME="Mail_rec Coverage Results" MODIFIED="1523582991399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
+    <SUITE FILE_PATH="coverage/ChooseStock$loadData.coverage" NAME="loadData Coverage Results" MODIFIED="1529380691117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
     <SUITE FILE_PATH="coverage/ChooseStock$EMS_rec.coverage" NAME="EMS_rec Coverage Results" MODIFIED="1524556328362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
-    <SUITE FILE_PATH="coverage/ChooseStock$EMS_ScreenShot.coverage" NAME="EMS_ScreenShot Coverage Results" MODIFIED="1524636295893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
-    <SUITE FILE_PATH="coverage/ChooseStock$selenium_test.coverage" NAME="selenium_test Coverage Results" MODIFIED="1520578049028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderCode" />
+    <SUITE FILE_PATH="coverage/ChooseStock$Mysql_Update_IndustryInfo.coverage" NAME="Mysql_Update_IndustryInfo Coverage Results" MODIFIED="1526976939390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$piaoju_date.coverage" NAME="piaoju_date Coverage Results" MODIFIED="1529662805893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
     <SUITE FILE_PATH="coverage/ChooseStock$excel.coverage" NAME="excel Coverage Results" MODIFIED="1524201483057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
     <SUITE FILE_PATH="coverage/ChooseStock$baoli_baseOP.coverage" NAME="baoli_baseOP Coverage Results" MODIFIED="1524538389660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Analysis" />
+    <SUITE FILE_PATH="coverage/ChooseStock$Mysql_Insert_IndustryInfo.coverage" NAME="Mysql_Insert_IndustryInfo Coverage Results" MODIFIED="1526527287680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$RZSQ_Get_file.coverage" NAME="RZSQ_Get_file Coverage Results" MODIFIED="1528941603174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
     <SUITE FILE_PATH="coverage/ChooseStock$logging.coverage" NAME="logging Coverage Results" MODIFIED="1524622515907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
-    <SUITE FILE_PATH="coverage/ChooseStock$get_text.coverage" NAME="get_text Coverage Results" MODIFIED="1523259949095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
-    <SUITE FILE_PATH="coverage/ChooseStock$Mail_rec_new.coverage" NAME="Mail_rec_new Coverage Results" MODIFIED="1523866964593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
+    <SUITE FILE_PATH="coverage/ChooseStock$rename.coverage" NAME="rename Coverage Results" MODIFIED="1526266915630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
     <SUITE FILE_PATH="coverage/ChooseStock$ReadExcel.coverage" NAME="ReadExcel Coverage Results" MODIFIED="1523439062853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
-    <SUITE FILE_PATH="coverage/ChooseStock$selenium.coverage" NAME="selenium Coverage Results" MODIFIED="1520498682542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderCode" />
-    <SUITE FILE_PATH="coverage/ChooseStock$ImageToString.coverage" NAME="ImageToString Coverage Results" MODIFIED="1523522823558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
+    <SUITE FILE_PATH="coverage/ChooseStock$Mysql_Insert_HotelIncome.coverage" NAME="Mysql_Insert_HotelIncome Coverage Results" MODIFIED="1526890791717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
     <SUITE FILE_PATH="coverage/ChooseStock$EMS_API.coverage" NAME="EMS_API Coverage Results" MODIFIED="1524044316267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Api" />
+    <SUITE FILE_PATH="coverage/ChooseStock$wechat_1.coverage" NAME="wechat_1 Coverage Results" MODIFIED="1529996521751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DoctorsData" />
     <SUITE FILE_PATH="coverage/ChooseStock$wechat_test.coverage" NAME="wechat_test Coverage Results" MODIFIED="1522831721280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
-    <SUITE FILE_PATH="coverage/ChooseStock$kdniao_api.coverage" NAME="kdniao_api Coverage Results" MODIFIED="1524535545214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Api" />
-    <SUITE FILE_PATH="coverage/ChooseStock$Op_data.coverage" NAME="Op_data Coverage Results" MODIFIED="1521192436487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
-    <SUITE FILE_PATH="coverage/ChooseStock$WeChatRobot.coverage" NAME="WeChatRobot Coverage Results" MODIFIED="1523270724228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
+    <SUITE FILE_PATH="coverage/ChooseStock$Load_DZHBL_RZSQ.coverage" NAME="Load_DZHBL_RZSQ Coverage Results" MODIFIED="1526868455363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$Docx_test.coverage" NAME="Docx-test Coverage Results" MODIFIED="1528105704101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$Get_EMS.coverage" NAME="Get_EMS Coverage Results" MODIFIED="1526269835281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$Mysql_Insert.coverage" NAME="Mysql_Insert Coverage Results" MODIFIED="1526452487478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
     <SUITE FILE_PATH="coverage/ChooseStock$wechat_send.coverage" NAME="wechat_send Coverage Results" MODIFIED="1523863567527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
     <SUITE FILE_PATH="coverage/ChooseStock$logging_test.coverage" NAME="logging_test Coverage Results" MODIFIED="1524623311681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
     <SUITE FILE_PATH="coverage/ChooseStock$Spider_haodf.coverage" NAME="Spider_haodf Coverage Results" MODIFIED="1520844857532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderCode" />
+    <SUITE FILE_PATH="coverage/ChooseStock$HR_Doc.coverage" NAME="HR_Doc Coverage Results" MODIFIED="1527060387088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$Mysql_Insert_SupplierInfo.coverage" NAME="Mysql_Insert_SupplierInfo Coverage Results" MODIFIED="1528080759847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$wechat_getfriends.coverage" NAME="wechat_getfriends Coverage Results" MODIFIED="1523175005493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
+    <SUITE FILE_PATH="coverage/ChooseStock$ImageAnalysis.coverage" NAME="ImageAnalysis Coverage Results" MODIFIED="1525675369939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$EMS_ScreenShot.coverage" NAME="EMS_ScreenShot Coverage Results" MODIFIED="1524636295893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$selenium_test.coverage" NAME="selenium_test Coverage Results" MODIFIED="1520578049028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderCode" />
+    <SUITE FILE_PATH="coverage/ChooseStock$Mysql_Insert_SupplierCommucation.coverage" NAME="Mysql_Insert_SupplierCommucation Coverage Results" MODIFIED="1527580148887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$get_text.coverage" NAME="get_text Coverage Results" MODIFIED="1524734091839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
+    <SUITE FILE_PATH="coverage/ChooseStock$BatchSpider_self.coverage" NAME="BatchSpider_self Coverage Results" MODIFIED="1528886116817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$Mail_rec_new.coverage" NAME="Mail_rec_new Coverage Results" MODIFIED="1523866964593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
+    <SUITE FILE_PATH="coverage/ChooseStock$selenium.coverage" NAME="selenium Coverage Results" MODIFIED="1520498682542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiderCode" />
+    <SUITE FILE_PATH="coverage/ChooseStock$ImageToString.coverage" NAME="ImageToString Coverage Results" MODIFIED="1523522823558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
+    <SUITE FILE_PATH="coverage/ChooseStock$kdniao_api.coverage" NAME="kdniao_api Coverage Results" MODIFIED="1526264862535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$Op_data.coverage" NAME="Op_data Coverage Results" MODIFIED="1521192436487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
+    <SUITE FILE_PATH="coverage/ChooseStock$WeChatRobot.coverage" NAME="WeChatRobot Coverage Results" MODIFIED="1523270724228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wechat" />
+    <SUITE FILE_PATH="coverage/ChooseStock$ruiji.coverage" NAME="ruiji Coverage Results" MODIFIED="1525772385965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DZHBL" />
+    <SUITE FILE_PATH="coverage/ChooseStock$test.coverage" NAME="test Coverage Results" MODIFIED="1527585474957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/测试" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - GCCFSI@39.108.218.254" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -70,25 +126,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EMS_ScreenShot.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py">
+      <file leaf-file-name="wechat_1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DoctorsData/wechat_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3571428">
-              <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.4006024">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
               <folding>
-                <element signature="e#68#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logging_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/测试/logging_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-              <folding>
-                <element signature="e#51#65#0" expanded="true" />
+                <element signature="e#65#78#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,36 +153,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SpiderCode/selenium.py" />
-        <option value="$PROJECT_DIR$/SpiderCode/selenium_test.py" />
-        <option value="$PROJECT_DIR$/SpiderCode/Spider_haodf.py" />
-        <option value="$PROJECT_DIR$/测试/wechat_test.py" />
-        <option value="$PROJECT_DIR$/测试/wechat_send.py" />
-        <option value="$PROJECT_DIR$/测试/wechat_getfriends.py" />
-        <option value="$PROJECT_DIR$/wechat/get_text.py" />
-        <option value="$PROJECT_DIR$/wechat/wechat_getfriends.py" />
-        <option value="$PROJECT_DIR$/wechat/WeChatRobot.py" />
-        <option value="$PROJECT_DIR$/测试/ReadExcel.py" />
-        <option value="C:/Python27/Lib/site-packages/pytesser/__init.py__" />
-        <option value="$PROJECT_DIR$/测试/ImageToString.py" />
-        <option value="$PROJECT_DIR$/wechat/Mail_rec.py" />
-        <option value="$PROJECT_DIR$/SpiderCode/Spider(wsbs.sz.gov.cn).py" />
-        <option value="$PROJECT_DIR$/Analysis/业绩归因(数据库获取行业).py" />
-        <option value="$PROJECT_DIR$/wechat/wechat_send.py" />
-        <option value="$PROJECT_DIR$/Api/EMS_API.py" />
-        <option value="$PROJECT_DIR$/Api/kdniao_api.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_36.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_37.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_38.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_39.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_40.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_41.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_42.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_43.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_44.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_45.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_46.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_47.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_48.sql" />
+        <option value="$PROJECT_DIR$/DZHBL/Mysql_Update_IndustryInfo.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_49.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_50.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_51.sql" />
+        <option value="$PROJECT_DIR$/DZHBL/Load_DZHBL_RZSQ.py" />
+        <option value="$PROJECT_DIR$/DZHBL/HR_Doc.py" />
+        <option value="$PROJECT_DIR$/DZHBL/Docx-test.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_52.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_53.sql" />
         <option value="$PROJECT_DIR$/测试/excel.py" />
-        <option value="$PROJECT_DIR$/Analysis/baoli_baseOP.py" />
-        <option value="$PROJECT_DIR$/wechat/Mail_rec_new.py" />
-        <option value="$PROJECT_DIR$/SpiderCode/SpiderExample(taobao).py" />
-        <option value="$PROJECT_DIR$/测试/EMS_rec.py" />
-        <option value="$PROJECT_DIR$/DZHBL/piaoju_date.py" />
-        <option value="$PROJECT_DIR$/测试/Op_data.py" />
-        <option value="$PROJECT_DIR$/测试/mkdir.py" />
-        <option value="$PROJECT_DIR$/测试/logging.py" />
-        <option value="$PROJECT_DIR$/测试/logging_test.py" />
-        <option value="$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py" />
-        <option value="$PROJECT_DIR$/.idea/dictionaries/Sally_Wang.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_54.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_55.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_56.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_57.sql" />
+        <option value="$PROJECT_DIR$/DZHBL/Mysql_Insert_SupplierCommucation.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_58.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_59.sql" />
+        <option value="$PROJECT_DIR$/测试/test.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_60.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_61.sql" />
+        <option value="$PROJECT_DIR$/DZHBL/Mysql_Insert_SupplierInfo.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_62.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_63.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_64.sql" />
+        <option value="$PROJECT_DIR$/DoctorsData/Spider_haodf.py" />
+        <option value="$PROJECT_DIR$/DZHBL/BatchSpider.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_65.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_66.sql" />
+        <option value="$PROJECT_DIR$/DZHBL/HR_Production.py" />
+        <option value="$PROJECT_DIR$/DZHBL/Hotel_Rebate.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_67.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_68.sql" />
+        <option value="$PROJECT_DIR$/DZHBL/RZSQ_Get_file.py" />
+        <option value="$PROJECT_DIR$/DZHBL/BatchSpider_self.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_69.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_70.sql" />
+        <option value="$PROJECT_DIR$/DZHBL/loadData.py" />
+        <option value="$PROJECT_DIR$/DoctorsData/wechat_1.py" />
       </list>
     </option>
   </component>
@@ -182,6 +247,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ChooseStock">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -193,69 +272,15 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="External Dependencies">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="C:">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ChooseStock">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ChooseStock">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="DZHBL">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ChooseStock">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT=".idea">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wechat" />
+    <property name="last_opened_file_path" value="C:/" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="Console.TableResult.DefaultCopyAction" value="Comma Separated Values (CSV)" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/MyProgram/ChooseStock/DZHBL/BatchSpider.py" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -267,6 +292,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProgram\ChooseStock\DoctorsData" />
       <recent name="C:\MyProgram\ChooseStock\DZHBL" />
       <recent name="C:\YoukWork\ChooseStock\SpiderCode" />
     </key>
@@ -276,62 +302,8 @@
       <recent name="C:\MyProgram\ChooseStock\wechat" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.EMS_ScreenShot">
-    <configuration default="false" name="baoli_baseOP" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Analysis" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ChooseStock" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Analysis/baoli_baseOP.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="EMS_rec" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/测试" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ChooseStock" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\MyProgram\ChooseStock\DZHBL\EMS_ScreenShot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="logging" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/测试" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ChooseStock" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\MyProgram\ChooseStock\测试\logging_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="EMS_ScreenShot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.wechat_1">
+    <configuration default="false" name="piaoju_date" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -344,25 +316,79 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ChooseStock" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DZHBL/piaoju_date.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="logging_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="BatchSpider_self" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/测试" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DZHBL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ChooseStock" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/测试/logging_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DZHBL/BatchSpider_self.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="loadData" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DZHBL" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ChooseStock" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DZHBL/loadData.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RZSQ_Get_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DZHBL" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ChooseStock" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DZHBL/RZSQ_Get_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="wechat_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DoctorsData" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ChooseStock" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DoctorsData/wechat_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -561,19 +587,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.baoli_baseOP" />
-      <item index="1" class="java.lang.String" itemvalue="Python.EMS_rec" />
-      <item index="2" class="java.lang.String" itemvalue="Python.logging" />
-      <item index="3" class="java.lang.String" itemvalue="Python.EMS_ScreenShot" />
-      <item index="4" class="java.lang.String" itemvalue="Python.logging_test" />
+      <item index="0" class="java.lang.String" itemvalue="Python.piaoju_date" />
+      <item index="1" class="java.lang.String" itemvalue="Python.BatchSpider_self" />
+      <item index="2" class="java.lang.String" itemvalue="Python.loadData" />
+      <item index="3" class="java.lang.String" itemvalue="Python.RZSQ_Get_file" />
+      <item index="4" class="java.lang.String" itemvalue="Python.wechat_1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.EMS_ScreenShot" />
-        <item index="1" class="java.lang.String" itemvalue="Python.logging_test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.logging" />
-        <item index="3" class="java.lang.String" itemvalue="Python.EMS_rec" />
-        <item index="4" class="java.lang.String" itemvalue="Python.baoli_baseOP" />
+        <item index="0" class="java.lang.String" itemvalue="Python.wechat_1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.piaoju_date" />
+        <item index="2" class="java.lang.String" itemvalue="Python.loadData" />
+        <item index="3" class="java.lang.String" itemvalue="Python.RZSQ_Get_file" />
+        <item index="4" class="java.lang.String" itemvalue="Python.BatchSpider_self" />
       </list>
     </recent_temporary>
   </component>
@@ -612,7 +638,13 @@
       <option name="project" value="LOCAL" />
       <updated>1523877662846</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="新增EMS接口查询脚本">
+      <created>1524637087187</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1524637087187</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -629,25 +661,27 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42578548" sideWeight="0.49840382" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36078006" sideWeight="0.49840382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.30511183" sideWeight="0.50159615" order="7" side_tool="true" content_ui="tabs" x="655" y="505" width="1250" height="382" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719395" sideWeight="0.49840382" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22101842" sideWeight="0.49840382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2708559" sideWeight="0.49840382" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15671642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24918744" sideWeight="0.49840382" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48192772" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15138593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="数据库" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -668,7 +702,8 @@
     <MESSAGE value="将好大夫数据按照病例数和投票数整理成数据表格" />
     <MESSAGE value="增加微信机器人测试代码" />
     <MESSAGE value="扫描邮件通过微信通知" />
-    <option name="LAST_COMMIT_MESSAGE" value="扫描邮件通过微信通知" />
+    <MESSAGE value="新增EMS接口查询脚本" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增EMS接口查询脚本" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -689,11 +724,6 @@
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/wechat/get_text.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/wechat/Mail_rec.py</url>
           <line>135</line>
           <option name="timeStamp" value="54" />
@@ -704,9 +734,39 @@
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py</url>
-          <line>102</line>
-          <option name="timeStamp" value="104" />
+          <url>file://$PROJECT_DIR$/Analysis/Brinson(excel).py</url>
+          <line>4</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DZHBL/loadData.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DZHBL/Mysql_Update_IndustryInfo.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DZHBL/Mysql_Update_IndustryInfo.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DZHBL/Docx-test.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DZHBL/HR_Doc.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DZHBL/Mysql_Insert_SupplierCommucation.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="141" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -716,235 +776,229 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="106" />
+      <option name="time" value="160" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="str(int(mailNumList[0]))" language="Python" />
-        <watch expression="mailNum" language="Python" />
-        <watch expression="driver.find_elements_by_css_selector(css_selector='singleErrors')" language="Python" />
-        <watch expression="e.strerror" language="Python" />
+        <watch expression="field" language="Python" />
+        <watch expression="addressDict[weChat_userName][i]" />
+        <watch expression="itchat.search_friends(name=addressDict[weChat_userName][i])[0]['UserName']" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider(test).py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_56.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="20" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="20" />
+          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DoctorsData/Spider_haodf.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_57.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030063292">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_58.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/selenium_test.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_59.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="35" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider(wsbs.sz.gov.cn).py">
+    <entry file="file://$PROJECT_DIR$/DZHBL/Mysql_Insert_IndustryInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.14867617">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider(test).py">
+    <entry file="file://$PROJECT_DIR$/DZHBL/Mysql_Insert_SupplierCommucation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="20" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.15478615">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <marker date="1527579744544" expanded="true" signature="783:982" placeholder="INSERT into HotelIncome... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DoctorsData/Spider_haodf.py">
+    <entry file="file://$PROJECT_DIR$/Analysis/Analysis(多周期+多指标).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider(wsbs.sz.gov.cn).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="20" selection-start-line="38" selection-start-column="0" selection-end-line="70" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider(test).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="20" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33292383">
-          <caret line="1797" column="0" selection-start-line="1797" selection-start-column="0" selection-end-line="1797" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChooseCode/QualityAnalyse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1520395">
-          <caret line="22" column="76" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChooseCode/QualityCodeReturn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3374536">
+        <state vertical-scroll-proportion="-2.5302114">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/测试/checkprocess.py">
+    <entry file="file://$PROJECT_DIR$/ChooseCode/Li_QualityWeight.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/xlsxwriter/worksheet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33274338">
-          <caret line="431" column="0" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat/get_text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#54#67#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wechat/WeChatRobot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2928082">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="e#38#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis/Analysis(单周期+单指标).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="21" />
-          <folding>
-            <element signature="e#80#91#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/selenium_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13620071">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pytesser/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29432014">
-          <caret line="34" column="67" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/urllib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="283" column="0" selection-start-line="283" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试/ImageToString.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-          <folding>
-            <element signature="e#23#44#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/selenium/webdriver/support/wait.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="241" column="0" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/zipfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="761" column="0" selection-start-line="761" selection-start-column="0" selection-end-line="761" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/xlrd/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis/Analysis(计算收益).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#80#91#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChooseCode/QualityWeight.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3006756">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="6" />
-          <folding>
-            <marker date="1522825215663" expanded="true" signature="1687:2010" placeholder="select a.FDa... StockMovingAvg" />
-            <marker date="1522825215663" expanded="true" signature="1820:1888" placeholder="select top 1... TradeDay" />
-            <marker date="1522825215663" expanded="true" signature="1906:1974" placeholder="select top 1... TradeDay" />
-            <marker date="1522825215663" expanded="true" signature="2034:2277" placeholder="select a.FDa... StockMovingAvg" />
-            <marker date="1522825215663" expanded="true" signature="2126:2192" placeholder="select top 1... TradeDay" />
-            <marker date="1522825215663" expanded="true" signature="2210:2276" placeholder="select top 1... TradeDay" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ChooseCode/GetNewChoose.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="22" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/测试/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5231884">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030063292">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_60.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2666667">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_61.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="57" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_62.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_63.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="51" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_64.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/Mysql_Insert_SupplierInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2547486">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DoctorsData/Spider_haodf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9354838">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/kdniao_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_65.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="65" selection-start-line="0" selection-start-column="65" selection-end-line="0" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_66.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/测试/excel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/测试/设置Excel格式模板.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_67.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_68.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/BatchSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.2190332">
+          <caret line="147" column="27" selection-start-line="147" selection-start-column="8" selection-end-line="147" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_70.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6333333">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bac79a5-7dcd-43cf-b133-eea56b5e8f4d/console_69.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.033334">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/piaoju_date.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20367534">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -952,30 +1006,28 @@
     <entry file="file://$PROJECT_DIR$/wechat/wechat_getfriends.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis/IndexIndustryReturn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1522825215653" expanded="true" signature="3955:4128" placeholder="select a.Sec... SecInfo" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试/ReadExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.66866267">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/测试/设置Excel格式模板.py">
+    <entry file="file://$PROJECT_DIR$/wechat/Mail_rec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5237366">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/itchat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.7212863">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/get_text.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -983,176 +1035,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/测试/WinOs.py">
+    <entry file="file://$PROJECT_DIR$/wechat/WeChatRobot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/BatchSpider_self.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis/业绩归因(数据库获取行业).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#89#100#0" expanded="true" />
-            <marker date="1523877606200" expanded="true" signature="3403:3514" placeholder="select SecCo... StockIndustry" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis/TradeAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试/excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7381757">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#47#64#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/SpiderExample(taobao).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="24" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="24" />
-          <folding>
-            <element signature="e#21#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis/baoli_baseOP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7406832">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/kdniao_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="104" selection-start-line="135" selection-start-column="104" selection-end-line="135" selection-end-column="104" />
-          <folding>
-            <element signature="e#47#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Api/EMS_API.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#57#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DZHBL/piaoju_date.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DoctorsData/Op_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DoctorsData/Spider_haodf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DZHBL/wechat_send.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.08584338">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding>
-            <marker date="1523954872742" expanded="true" signature="202:343" placeholder="select t.Cod... T_OERS" />
             <marker date="1523954872742" expanded="true" signature="202:344" placeholder="select t.Cod... T_OERS" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat/Mail_rec_new.py">
+    <entry file="file://$PROJECT_DIR$/DZHBL/loadData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.242236">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#60#90#0" expanded="true" />
+            <marker date="1529380691113" expanded="true" signature="322:329" placeholder="select * fro... SupplierInfo" />
+            <marker date="1529380691113" expanded="true" signature="322:649" placeholder="select Suppl... SupplierInfo" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat/Mail_rec.py">
+    <entry file="file://$PROJECT_DIR$/DZHBL/ruiji.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7080745">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DZHBL/kdniao_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3213573">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpiderCode/Spider(wsbs.sz.gov.cn).py">
+    <entry file="file://$PROJECT_DIR$/DZHBL/RZSQ_Get_file.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="137" column="8" selection-start-line="137" selection-start-column="8" selection-end-line="138" selection-end-column="39" />
-          <folding>
-            <element signature="e#41#55#0" expanded="false" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/测试/logging_test.py">
+    <entry file="file://$PROJECT_DIR$/DZHBL/rename.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding>
-            <element signature="e#51#65#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DZHBL/EMS_ScreenShot.py">
+    <entry file="file://$PROJECT_DIR$/DZHBL/Load_DZHBL_sql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3571428">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/Load_DZHBL_RZSQ.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/HR_Production.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/ImageAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/HR_Doc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/Hotel_Rebate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/Get_EMS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/Docx-test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DZHBL/Data_loan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DoctorsData/wechat_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4006024">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
           <folding>
-            <element signature="e#68#89#0" expanded="true" />
+            <element signature="e#65#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
