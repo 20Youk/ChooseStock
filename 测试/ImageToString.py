@@ -12,6 +12,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.chrome.options import Options
 
+
 def take_screenshot(url, save_fn="../../file/capture.png"):
     chrome_option = Options()
     chrome_option.add_argument('--headless')

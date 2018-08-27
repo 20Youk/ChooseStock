@@ -21,6 +21,7 @@ one_list = [[supplier_list[0], hotel_list[0], startDate, 1],
             [supplier_list[0], hotel_list[0], endDate, 1]]
 firstDay = datetime.datetime(1900, 1, 1)
 today = datetime.datetime.now()
+# today = datetime.datetime(2018, 7, 01)
 today_int = (today - firstDay).days + 2
 for i in range(1, len(supplier_list)):
     if supplier_list[i] == supplier and hotel_list[i] == hotel:

@@ -91,15 +91,14 @@ class EnterpriseInfoSpider:
             detail_soup = BeautifulSoup(detail_response.text, 'html.parser')
             company = soup.select('.ma_h1')[0].text
             print company
+            self_risk = 0
+            link_risk = 0
             risk_list = detail_soup.find_all(lambda tag: tag.name == 'span' and tag.get('class') == ["text-danger"])
             if len(risk_list) > 1:
-                if risk_list[0].previous == u'\u81ea\u8eab\u98ce\u9669 ':
+                if risk_list[0].previous.strip() == u'\u81ea\u8eab\u98ce\u9669':
                     self_risk = int(risk_list[0].text)
-                elif risk_list[0].previous == u'\u5173\u8054\u98ce\u9669 ' or risk_list[1].previous == u'\u5173\u8054\u98ce\u9669 ':
+                elif risk_list[0].previous.strip() == u'\u5173\u8054\u98ce\u9669' or risk_list[1].previous.strip() == u'\u5173\u8054\u98ce\u9669':
                     link_risk = int(risk_list[1].text)
-            else:
-                self_risk = 0
-                link_risk = 0
             register_cash = detail_soup.select('.ntable td')[7].text.strip()
             real_cash = detail_soup.select('.ntable td')[9].text.strip()
             status = detail_soup.select('.ntable td')[11].text.strip()
