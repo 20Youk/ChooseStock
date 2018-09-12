@@ -63,10 +63,10 @@ if __name__ == '__main__':
     if not os.path.exists(filePath):
         os.mkdir(filePath)
     excel = filePath + '/%d月融资申请中与已放款数据%s.xlsx' % (month, today)
-    server = '172.18.4.47'
-    userName = 'dbreader'
-    passWord = 'dzhbl1234'
-    dataBase = 'Baoli'
+    server = '***'
+    userName = '***'
+    passWord = '***'
+    dataBase = '***'
     sql1 = '''declare @oneday datetime
             set @oneday = convert(date, dateadd(dd, -day(getdate())+1, GETDATE()), 120);
             with t0 as (select t1.DocEntry, convert(decimal(18,2), sum(t1.LineTotal)) as SumLineTotle, convert(decimal(18,2), sum(t1.ALineTotal)) as SumALineTotle from U_RZQR1 t1 group by t1.DocEntry)

@@ -10,10 +10,10 @@ filePath = '../../file/IndustryInfo.xlsx'
 df = pd.read_excel(filePath, sheet_name=0)
 df = df.fillna('NULL')
 allValues = df.values
-host = '39.108.218.254'
-user = 'root'
-ps = 'Gccf,1234'
-db = 'GCCFSI'
+host = '***'
+user = '***'
+ps = '***'
+db = '***'
 db = MySQLdb.connect(host, user, ps, db, charset='utf8')
 db.autocommit(on=True)
 cursor = db.cursor()

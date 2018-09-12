@@ -5,10 +5,10 @@ import MySQLdb
 import xlsxwriter
 
 filePath = '../../file/SupplierInfo20180716.xlsx'
-host = '39.108.218.254'
-user = 'root'
-ps = 'Gccf,1234'
-db = 'GCCFSI'
+host = '***'
+user = '***'
+ps = '***'
+db = '***'
 db = MySQLdb.connect(host, user, ps, db, charset='utf8')
 db.autocommit(on=True)
 cursor = db.cursor()

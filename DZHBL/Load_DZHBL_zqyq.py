@@ -48,10 +48,10 @@ if __name__ == '__main__':
     if not os.path.exists(filePath):
         os.mkdir(filePath)
     excel = filePath + '/关注逾期数据%s.xlsx' % today
-    server = '172.18.4.47'
-    userName = 'dbreader'
-    passWord = 'dzhbl1234'
-    dataBase = 'Baoli'
+    server = '***'
+    userName = '***'
+    passWord = '***'
+    dataBase = '***'
     sql1 = '''with t00 as (select t1.DocEntry, t2.BaseEntry,t2.QCode, t2.BDate, t2.BTotal from U_OPFK t1, U_OPFK1 t2 where t1.DocEntry = t2.DocEntry and  t2.BaseEntry is not null and t1.DocType = 'T')
             ,a as (select
             t.BCardName,

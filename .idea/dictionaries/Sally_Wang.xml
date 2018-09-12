@@ -2,8 +2,10 @@
   <dictionary name="Sally Wang">
     <words>
       <w>alldata</w>
+      <w>appcode</w>
       <w>appid</w>
       <w>appkey</w>
+      <w>bodys</w>
       <w>catalogpagecode</w>
       <w>commucation</w>
       <w>companylist</w>
@@ -18,6 +20,7 @@
       <w>firmid</w>
       <w>firmiddoms</w>
       <w>gccfsi</w>
+      <w>jtem</w>
       <w>mailnum</w>
       <w>newstyle</w>
       <w>ntable</w>
@@ -28,6 +31,7 @@
       <w>phonedom</w>
       <w>postdata</w>
       <w>qichacha</w>
+      <w>querys</w>
       <w>readworkbook</w>
       <w>requestdata</w>
       <w>rtght</w>

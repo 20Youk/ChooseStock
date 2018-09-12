@@ -30,9 +30,9 @@ def write_to_excel(filepath, data, field):
 if __name__ == '__main__':
     excelPath = '../../file/Load_Data_%s.xlsx' % time.strftime('%Y%m%d')
     server = 'localhost'
-    userName = 'dbreader'
+    userName = '***'
     passWord = '*****'
-    dataBase = 'baoli'
+    dataBase = '***'
     sql1 = '''with t2 as (select t1.DocEntry, convert(decimal(18,2), sum(t1.LineTotal)) as SumLineTotle,
                             convert(decimal(18,2), sum(t1.ALineTotal)) as SumALineTotle
                             from U_RZQR1 t1 group by t1.DocEntry)

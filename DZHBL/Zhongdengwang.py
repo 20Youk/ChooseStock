@@ -16,7 +16,7 @@ import os
 
 
 userCode = 'dzh001'
-password = 'Dzhbl753'
+password = '***'
 # 设置文件路径
 page_path = r'..\..\file\base\screenshot.png'
 image_path = r'..\..\file\base\code.png'

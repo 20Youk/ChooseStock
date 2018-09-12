@@ -8,7 +8,7 @@ import datetime
 import os
 import sys
 
-host, user, password, database = '172.18.4.47', 'dbreader', 'dzhbl1234', 'Baoli'
+host, user, password, database = '***', '***', '***', '***'
 sqlList = ['[HR_Business_Product]', '[HR_Opration_Product]', '[HR_Group_Product]', '[HR_Group_Product]', '[HR_Group_Product]']
 today = datetime.date.today()
 filePath = '/home/vftpuser/public/HR绩效报表/%s' % today

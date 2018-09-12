@@ -7,7 +7,7 @@ import datetime
 import os
 import sys
 
-host, user, password, database = '172.18.4.47', 'dbreader', 'dzhbl1234', 'Baoli'
+host, user, password, database = '***', '***', '***', '***'
 sqlList = ['[Hotel_Rebate]']
 today = datetime.date.today()
 filePath = '/home/vftpuser/public/酒店返点数据/%s' % today

@@ -16,10 +16,10 @@ def conn_sql(hostname, database, username, password, sql):
     return sqldata, field
 
 if __name__ == '__main__':
-    host = '112.74.53.117'
-    db = 'Baoli'
-    user = 'dbreader'
-    pw = 'dzhbl1234'
+    host = '***'
+    db = '***'
+    user = '***'
+    pw = '***'
     sql1 = '''with t2 as (select t1.DocEntry, convert(decimal(18,2), sum(t1.LineTotal)) as SumLineTotle, convert(decimal(18,2), sum(t1.ALineTotal)) as SumALineTotle
                 from U_RZQR1 t1 group by t1.DocEntry)
                 select t1.RZHCode as '融资申请编号',
