@@ -10,5 +10,11 @@
       <schema-pattern>GCCFSI.*</schema-pattern>
       <default-schemas>GCCFSI.*</default-schemas>
     </data-source>
+    <data-source name="PostgreSQL - factoring@112.74.42.22" uuid="6d93c6e6-0a98-4f2b-a16c-fccba41095ed">
+      <secret-storage>master_key</secret-storage>
+      <user-name>dolphindata</user-name>
+      <schema-pattern>factoring.pg_catalog factoring.public</schema-pattern>
+      <default-schemas>factoring.public</default-schemas>
+    </data-source>
   </component>
 </project>

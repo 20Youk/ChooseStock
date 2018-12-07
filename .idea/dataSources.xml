@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1591600287">
+  <component name="DataSourceManagerImpl" format="xml" hash="2119110802">
     <data-source source="LOCAL" name="SQL Server (Microsoft) - PortfolioData@winserver2016" uuid="8db1f371-6aeb-4b47-bcde-c307725bce93">
       <driver-ref>sqlserver.ms</driver-ref>
       <synchronize>true</synchronize>
@@ -12,6 +12,7 @@
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://39.108.218.254:3306/GCCFSI</jdbc-url>
+      <default-dialect>MySQL</default-dialect>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
@@ -19,6 +20,12 @@
         <property name="characterSetResults" value="utf8" />
         <property name="yearIsDateType" value="false" />
       </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="PostgreSQL - factoring@112.74.42.22" uuid="6d93c6e6-0a98-4f2b-a16c-fccba41095ed">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://112.74.42.22:64321/factoring</jdbc-url>
     </data-source>
   </component>
 </project>

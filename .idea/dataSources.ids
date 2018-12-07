@@ -352,4 +352,177 @@ InvoiceNum</columns>
       </column>
     </database-model>
   </data-source>
+  <data-source name="PostgreSQL - factoring@112.74.42.22" uuid="6d93c6e6-0a98-4f2b-a16c-fccba41095ed">
+    <database-info product="PostgreSQL" version="11.0 (Debian 11.0-1.pgdg90+2)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.4">
+      <database id="1" name="factoring"/>
+      <schema id="2" parent="1" name="public">
+        <object-id>2200</object-id>
+        <comment>standard public schema</comment>
+      </schema>
+      <schema id="3" parent="1" name="pg_catalog">
+        <object-id>11</object-id>
+        <comment>system catalog schema</comment>
+      </schema>
+      <table id="4" parent="2" name="city">
+        <object-id>24654</object-id>
+        <state-number>2244</state-number>
+      </table>
+      <table id="5" parent="2" name="collection_record">
+        <object-id>24657</object-id>
+        <state-number>2246</state-number>
+      </table>
+      <table id="6" parent="2" name="financial_indicator_score">
+        <object-id>24660</object-id>
+        <state-number>2252</state-number>
+      </table>
+      <table id="7" parent="2" name="hotel_info">
+        <object-id>24663</object-id>
+        <state-number>2254</state-number>
+      </table>
+      <table id="8" parent="2" name="location">
+        <object-id>24666</object-id>
+        <state-number>2256</state-number>
+      </table>
+      <table id="9" parent="2" name="public_praise_score">
+        <object-id>24669</object-id>
+        <state-number>2261</state-number>
+      </table>
+      <table id="10" parent="2" name="qrtz_blob_triggers">
+        <object-id>24675</object-id>
+        <state-number>2440</state-number>
+      </table>
+      <table id="11" parent="2" name="qrtz_calendars">
+        <object-id>24681</object-id>
+        <state-number>2265</state-number>
+      </table>
+      <table id="12" parent="2" name="qrtz_cron_triggers">
+        <object-id>24687</object-id>
+        <state-number>2441</state-number>
+      </table>
+      <table id="13" parent="2" name="qrtz_fired_triggers">
+        <object-id>24693</object-id>
+        <state-number>2269</state-number>
+      </table>
+      <table id="14" parent="2" name="qrtz_job_details">
+        <object-id>24699</object-id>
+        <state-number>2444</state-number>
+      </table>
+      <table id="15" parent="2" name="qrtz_locks">
+        <object-id>24705</object-id>
+        <state-number>2273</state-number>
+      </table>
+      <table id="16" parent="2" name="qrtz_paused_trigger_grps">
+        <object-id>24708</object-id>
+        <state-number>2275</state-number>
+      </table>
+      <table id="17" parent="2" name="qrtz_scheduler_state">
+        <object-id>24711</object-id>
+        <state-number>2277</state-number>
+      </table>
+      <table id="18" parent="2" name="qrtz_simple_triggers">
+        <object-id>24714</object-id>
+        <state-number>2442</state-number>
+      </table>
+      <table id="19" parent="2" name="qrtz_simprop_triggers">
+        <object-id>24720</object-id>
+        <state-number>2443</state-number>
+      </table>
+      <table id="20" parent="2" name="qrtz_triggers">
+        <object-id>24726</object-id>
+        <state-number>2440</state-number>
+      </table>
+      <table id="21" parent="2" name="schedule_job">
+        <object-id>24732</object-id>
+        <state-number>2285</state-number>
+      </table>
+      <table id="22" parent="2" name="schedule_job_log">
+        <object-id>24738</object-id>
+        <state-number>2287</state-number>
+      </table>
+      <table id="23" parent="2" name="score_info">
+        <object-id>24744</object-id>
+        <state-number>2289</state-number>
+      </table>
+      <table id="24" parent="2" name="site_inspection_score">
+        <object-id>24747</object-id>
+        <state-number>2291</state-number>
+      </table>
+      <table id="25" parent="2" name="spring_session">
+        <object-id>24753</object-id>
+        <state-number>2445</state-number>
+      </table>
+      <table id="26" parent="2" name="spring_session_attributes">
+        <object-id>24756</object-id>
+        <state-number>2445</state-number>
+      </table>
+      <table id="27" parent="2" name="supplier_config">
+        <object-id>24762</object-id>
+        <state-number>2297</state-number>
+      </table>
+      <table id="28" parent="2" name="supplier_hotel_info">
+        <object-id>24768</object-id>
+        <state-number>2303</state-number>
+      </table>
+      <table id="29" parent="2" name="supplier_info">
+        <object-id>24771</object-id>
+        <state-number>4414</state-number>
+      </table>
+      <table id="30" parent="2" name="sys_config">
+        <object-id>24777</object-id>
+        <state-number>2313</state-number>
+      </table>
+      <table id="31" parent="2" name="sys_dept">
+        <object-id>24784</object-id>
+        <state-number>2315</state-number>
+      </table>
+      <table id="32" parent="2" name="sys_dict">
+        <object-id>24788</object-id>
+        <state-number>2317</state-number>
+      </table>
+      <table id="33" parent="2" name="sys_log">
+        <object-id>24796</object-id>
+        <state-number>2319</state-number>
+      </table>
+      <table id="34" parent="2" name="sys_menu">
+        <object-id>24802</object-id>
+        <state-number>2321</state-number>
+      </table>
+      <table id="35" parent="2" name="sys_oss">
+        <object-id>24808</object-id>
+        <state-number>2323</state-number>
+      </table>
+      <table id="36" parent="2" name="sys_role">
+        <object-id>24811</object-id>
+        <state-number>2325</state-number>
+      </table>
+      <table id="37" parent="2" name="sys_role_dept">
+        <object-id>24814</object-id>
+        <state-number>2327</state-number>
+      </table>
+      <table id="38" parent="2" name="sys_role_menu">
+        <object-id>24817</object-id>
+        <state-number>2329</state-number>
+      </table>
+      <table id="39" parent="2" name="sys_user">
+        <object-id>24820</object-id>
+        <state-number>3187</state-number>
+      </table>
+      <table id="40" parent="2" name="sys_user_role">
+        <object-id>24826</object-id>
+        <state-number>2338</state-number>
+      </table>
+      <table id="41" parent="2" name="tb_token">
+        <object-id>24829</object-id>
+        <state-number>2340</state-number>
+      </table>
+      <table id="42" parent="2" name="tb_user_login_info">
+        <object-id>24835</object-id>
+        <state-number>2342</state-number>
+      </table>
+    </database-model>
+  </data-source>
 </component>
