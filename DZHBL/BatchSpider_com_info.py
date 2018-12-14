@@ -33,7 +33,7 @@ class EnterpriseInfoSpider:
         self.userAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36"
 
         # 数据字段名9个
-        self.fields = [u'公司名称', u'网站链接', u'注册资本', u'实缴资本', u'经营状态', u'成立日期', u'公司地址',
+        self.fields = [u'查询公司', u'公司名称', u'网站链接', u'电话', u'注册资本', u'实缴资本', u'经营状态', u'成立日期', u'公司地址',
                        u'所属区域', u'登记机关', u'公司简介', u'参保人数', u'被执行人信息', u'失信信息', u'商标信息', u'专利信息',
                        u'证书信息', u'作品著作信息', u'软件信息', u'网站信息']
 
@@ -97,9 +97,8 @@ class EnterpriseInfoSpider:
             company = soup.select('.ma_h1')[0].text
             print u'查询第%d个企业信息：%s' % (k, company)
             k += 1
-            phone = detail_soup.select('.cvlu')[0].text.strip().split(' ')[0]
             length = len(detail_soup.select('.company-nav-items'))
-            if length < 4:
+            if length < 6:
                 continue
             check = detail_soup.select('.company-nav-items')[0].text.split()
             if check[0] == u'\u80a1\u7968\u884c\u60c5':
@@ -110,14 +109,15 @@ class EnterpriseInfoSpider:
                 falv = detail_soup.select('.company-nav-items')[1].text.split()
                 chanquan = detail_soup.select('.company-nav-items')[5].text.split()
                 cominfo = detail_soup.select('.ntable td')
+            phone = detail_soup.select('.cvlu')[0].text.strip().split(' ')[0]
             zhixing = int(falv[1])
             shixin = int(falv[3])
-            shangbiao = int(chanquan[1])
-            zhuanli = int(chanquan[3])
-            zhengshu = int(chanquan[5])
-            zuopin = int(chanquan[7])
-            ruanjian = int(chanquan[9])
-            wangzhan = int(chanquan[11])
+            shangbiao = int(999 if chanquan[1] == '999+' else chanquan[1])
+            zhuanli = int(999 if chanquan[3] == '999+' else chanquan[3])
+            zhengshu = int(999 if chanquan[5] == '999+' else chanquan[5])
+            zuopin = int(999 if chanquan[7] == '999+' else chanquan[7])
+            ruanjian = int(999 if chanquan[9] == '999+' else chanquan[9])
+            wangzhan = int(999 if chanquan[11] == '999+' else chanquan[11])
             # self_risk = 0
             # link_risk = 0
             # risk_list = detail_soup.find_all(lambda tag: tag.name == 'span' and tag.get('class') == ["text-danger"])
@@ -145,9 +145,9 @@ class EnterpriseInfoSpider:
         # [u'公司名称', u'网站链接', u'电话', u'注册资本', u'实缴资本', u'经营状态', u'成立日期', u'公司地址',
         #                u'所属区域', u'公司简介', u'参保人数', u'被执行人信息', u'失信信息', u'商标信息', u'专利信息',
         #                u'证书信息', u'作品著作信息', u'软件信息,' u'网站信息']
-            self.alldata.append([company, detail_url, phone, register_cash, real_cash, status, build_date, address, area, register_gov, description, canbao,
+            self.alldata.append([item, company, detail_url, phone, register_cash, real_cash, status, build_date, address, area, register_gov, description, canbao,
                                  zhixing, shixin, shangbiao, zhuanli, zhengshu, zuopin, ruanjian, wangzhan])
-            time.sleep(0.3)
+            time.sleep(1)
             self.write_to_excel()
 
     def write_to_excel(self):

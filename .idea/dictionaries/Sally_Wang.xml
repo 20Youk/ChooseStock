@@ -24,9 +24,11 @@
       <w>firmid</w>
       <w>firmiddoms</w>
       <w>gccfsi</w>
+      <w>huizhou</w>
       <w>jtem</w>
       <w>mailnum</w>
       <w>newstyle</w>
+      <w>nrows</w>
       <w>ntable</w>
       <w>oneday</w>
       <w>opfk</w>
@@ -44,6 +46,7 @@
       <w>rzqr</w>
       <w>sendpost</w>
       <w>shangbiao</w>
+      <w>shenzhen</w>
       <w>shixin</w>
       <w>showpassword</w>
       <w>sumstyle</w>
@@ -59,6 +62,7 @@
       <w>zhixing</w>
       <w>zhuanli</w>
       <w>zhuge</w>
+      <w>zhuhai</w>
       <w>zuopin</w>
     </words>
   </dictionary>
