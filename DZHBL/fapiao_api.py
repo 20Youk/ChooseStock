@@ -9,12 +9,22 @@ import pandas as pd
 import MySQLdb
 import ConfigParser
 
+
+def exp_num(s):
+    global s1, s2
+    for i in range(0, len(s)):
+        if s[i].isdigit():
+            s1 = s[:i]
+            s2 = s[i:]
+            break
+    return s1, s2
+
 filePath = '../../file/fapiao.xlsx'
 df = pd.read_excel(filePath, sheet_name=0)
 df = df.fillna('')
 allValues = df.values
 con = ConfigParser.ConfigParser()
-config_path = './config/config.txt'
+config_path = '../../config/GCCFSI.txt'
 with open(config_path, 'r') as f:
     con.readfp(f)
     dbHost = con.get('info', 'server')
@@ -24,8 +34,8 @@ with open(config_path, 'r') as f:
 db = MySQLdb.connect(dbHost, user, ps, dbName, charset='utf8')
 db.autocommit(on=True)
 cursor = db.cursor()
-sql1 = '''INSERT SupplierInvoice VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %.2f, %.2f, '%s', '%s') '''
-sql2 = '''insert InvoiceGoods VALUES ('%s', '%s', %.2f, %.2f, %.2f, %.2f, %.2f)'''
+sql1 = '''INSERT SupplierInvoice VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %.2f, %.2f, '%s', '%s') '''
+sql2 = '''insert InvoiceGoods VALUES ('%s', '%s', %.2f, %.2f, %.2f, %.2f, %.2f, '%s')'''
 
 host = 'https://fapiao.market.alicloudapi.com'
 path = '/invoice/query'
@@ -52,22 +62,23 @@ for jtem in allValues:
         response = urllib2.urlopen(request, context=ctx)
         content = response.read()
         retDict = json.loads(content)
-        if retDict:
+        if retDict['success']:
+            gfBankName, gfBankCode = exp_num(retDict['gfBank'])
+            xfBankName, xfBankCode = exp_num(retDict['xfBank'])
             sqlValues1 = [retDict['fpdm'], retDict['fphm'], retDict['fplx'],
                           retDict['code'], retDict['gfMc'], retDict['gfNsrsbh'],
-                          retDict['gfContact'].split(' ')[0], retDict['gfContact'].split(' ')[1],
-                          retDict['gfBank'].split(' ')[0],
-                          retDict['gfBank'].split(' ')[1], retDict['xfMc'], retDict['xfNsrsbh'],
-                          retDict['xfContact'].split(' ')[0],
-                          retDict['xfContact'].split(' ')[1], retDict['xfBank'].split(' ')[0],
-                          retDict['xfBank'].split(' ')[1],
+                          retDict['gfContact'], gfBankName, gfBankCode,
+                          retDict['xfMc'], retDict['xfNsrsbh'],
+                          retDict['xfContact'], xfBankName, xfBankCode,
                           float(retDict['sumamount']), float(retDict['goodsamount']), retDict['del'], retDict['kprq']]
             cursor.execute(sql1 % tuple(sqlValues1))
             goodsData = retDict['goodsData']
             for item in goodsData:
                 sqlValues2 = [item['name'], item['unit'], float(item['amount']), float(item['priceUnit']),
-                              float(item['priceSum']), float(item['taxRate']) * 0.01, float(item['taxSum'])]
+                              float(item['priceSum']), float(item['taxRate']) * 0.01, float(item['taxSum']), retDict['fphm']]
                 cursor.execute(sql2 % tuple(sqlValues2))
+        else:
+            print retDict['data']
     except(urllib2.URLError, Exception, IOError), e:
         print '程序出错，异常信息：%s' % e
         continue

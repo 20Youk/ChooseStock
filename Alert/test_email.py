@@ -1,42 +1,89 @@
-<p><strong>ÖĞ»ª½ğÈÚ2019ÄêÒµ¼¨±¨±í</strong></p>
-<p><strong>ÈÕÆÚ: 2019/2/1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    ÒÑ¹ı¹¤×÷ÈÕ: 21 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ê±¼ä½ø¶È:92%</strong></p>
+# -*- coding:utf8 -*-
+import pymssql
+import smtplib
+from email.mime.text import MIMEText
+import ConfigParser
+import logging
+import sys
+import time
+
+log_path = '../../log/alert/alert_test_%s' % time.strftime('%Y%m%d') + '.txt'
+con = ConfigParser.ConfigParser()
+config_path = '../../config/config.txt'
+alert_path = '../../config/alert_test.txt'
+with open(config_path, 'r') as f:
+    con.readfp(f)
+    fromaddr = con.get('info', 'from_addr')
+    from_pw = con.get('info', 'from_pw')
+    mailServer = con.get('info', 'mail_server')
+    mailPort = con.getint('info', 'mail_port')
+with open(alert_path, 'r') as g:
+    con.readfp(g)
+    toaddr = con.get('info', 'to_addr')
+    ccaddr = con.get('info', 'cc_addr')
+    submit = con.get('info', 'submit')
+
+# è®¾ç½®æ—¥å¿—è¾“å‡º
+reload(sys)
+sys.setdefaultencoding('gbk')
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+# è®¾ç½®æ—¥å¿—è¾“å‡ºæ ¼å¼
+formatter = logging.Formatter('%(asctime)s [%(levelname)s]  %(name)s : %(message)s')
+# è®¾ç½®æ—¥å¿—æ–‡ä»¶è·¯å¾„ã€å‘Šè­¦çº§åˆ«è¿‡æ»¤ã€è¾“å‡ºæ ¼å¼
+fh = logging.FileHandler(log_path)
+fh.setLevel(logging.WARN)
+fh.setFormatter(formatter)
+# è®¾ç½®æ§åˆ¶å°å‘Šè­¦çº§åˆ«ã€è¾“å‡ºæ ¼å¼
+ch = logging.StreamHandler()
+# ch.setLevel(logging.INFO)
+ch.setFormatter(formatter)
+# è½½å…¥é…ç½®
+logger.addHandler(fh)
+logger.addHandler(ch)
+
+
+def send_email(from_addr, to_addr, subject, password):
+    sheetstring = '''
+                    <p><strong>ä¸­åé‡‘è2019å¹´ä¸šç»©æŠ¥è¡¨</strong></p>
+<p><strong>æ—¥æœŸ: 2019/2/1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    å·²è¿‡å·¥ä½œæ—¥: 21 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ—¶é—´è¿›åº¦:92%</strong></p>
 <table border=2 cellpadding=2 cellspacing=2 width=1500pt
        style='font-size:xx-small;'>
  <tr style='height:37.5pt'>
-  <td rowspan=2 height=50 style='height:37.5pt'>ÔÂ·İ</td>
-  <td colspan=4>×Ü·Å¿îÒµ¼¨</td>
-  <td colspan=4>ĞÂ¿Í»§·Å¿î</td>
-  <td colspan=3>ĞÂ¿Í»§Êı</td>
-  <td colspan=4>ÀÏ¿Í»§·Å¿î</td>
-  <td colspan=4>ÊÕÈë</td>
-  <td colspan=2>¿â´æ</td>
+  <td rowspan=2 height=50 style='height:37.5pt'>æœˆä»½</td>
+  <td colspan=4>æ€»æ”¾æ¬¾ä¸šç»©</td>
+  <td colspan=4>æ–°å®¢æˆ·æ”¾æ¬¾</td>
+  <td colspan=3>æ–°å®¢æˆ·æ•°</td>
+  <td colspan=4>è€å®¢æˆ·æ”¾æ¬¾</td>
+  <td colspan=4>æ”¶å…¥</td>
+  <td colspan=2>åº“å­˜</td>
  </tr>
  <tr style='height:37.5pt'>
-  <td>Ä¿±ê</td>
-  <td>ÒÑ·Å¿î</td>
-  <td>ÉêÇëÖĞ</td>
-  <td>´ï³ÉÂÊ</td>
-  <td>Ä¿±ê</td>
-  <td>ÒÑ·Å¿î</td>
-  <td>ÉêÇëÖĞ</td>
-  <td>´ï³ÉÂÊ</td>
-  <td>Ä¿±ê</td>
-  <td>Êµ¼Ê</td>
-  <td>´ï³ÉÂÊ</td>
-  <td>Ä¿±ê</td>
-  <td>ÒÑ·Å¿î</td>
-  <td>ÉêÇëÖĞ</td>
-  <td>´ï³ÉÂÊ</td>
-  <td>Ä¿±ê</td>
-  <td>ÒÑ·Å¿î</td>
-  <td>ÉêÇëÖĞ</td>
-  <td>´ï³ÉÂÊ</td>
-  <td>Ä¿±ê</td>
-  <td>Êµ¼Ê</td>
+  <td>ç›®æ ‡</td>
+  <td>å·²æ”¾æ¬¾</td>
+  <td>ç”³è¯·ä¸­</td>
+  <td>è¾¾æˆç‡</td>
+  <td>ç›®æ ‡</td>
+  <td>å·²æ”¾æ¬¾</td>
+  <td>ç”³è¯·ä¸­</td>
+  <td>è¾¾æˆç‡</td>
+  <td>ç›®æ ‡</td>
+  <td>å®é™…</td>
+  <td>è¾¾æˆç‡</td>
+  <td>ç›®æ ‡</td>
+  <td>å·²æ”¾æ¬¾</td>
+  <td>ç”³è¯·ä¸­</td>
+  <td>è¾¾æˆç‡</td>
+  <td>ç›®æ ‡</td>
+  <td>å·²æ”¾æ¬¾</td>
+  <td>ç”³è¯·ä¸­</td>
+  <td>è¾¾æˆç‡</td>
+  <td>ç›®æ ‡</td>
+  <td>å®é™…</td>
  </tr>
  <tr style='height:27.0pt;word-wrap:break-word;'>
-  <td>2019Äê1ÔÂ</td>
+  <td>2019å¹´1æœˆ</td>
   <td>12,981,715</td>
   <td>10,994,407</td>
   <td>420,168</td>
@@ -66,368 +113,368 @@
   <td>13,703,102 </td>
  </tr>
  <tr style='height:27.0pt'>
-  <td>2019Äê2ÔÂ</td>
+  <td>2019å¹´2æœˆ</td>
   <td>12,158,515 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>1,499,610 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>5 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>10,658,905 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>379,345 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;color:#9C0006;
   font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
-  none;'>¡¡</td>
+  none;'>ã€€</td>
   <td>18,776,325 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
  </tr>
  <tr style='height:27.0pt'>
-  <td>2019Äê3ÔÂ</td>
+  <td>2019å¹´3æœˆ</td>
   <td>16,623,625 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>4,605,945 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>15 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>12,017,680 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>332,473 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;color:#9C0006;
   font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
-  none;'>¡¡</td>
+  none;'>ã€€</td>
   <td>23,382,270 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
  </tr>
  <tr style='height:27.0pt'>
-  <td>2019Äê4ÔÂ</td>
+  <td>2019å¹´4æœˆ</td>
   <td>20,586,880 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>6,534,015 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>22 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>14,052,865 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>411,738 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;color:#9C0006;
   font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
-  none;'>¡¡</td>
+  none;'>ã€€</td>
   <td>29,916,285 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
  </tr>
  <tr style='height:27.0pt'>
-  <td>2019Äê5ÔÂ</td>
+  <td>2019å¹´5æœˆ</td>
   <td>25,264,235 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>7,498,050 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>25 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>17,766,185 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>505,285 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;color:#9C0006;
   font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
-  none;'>¡¡</td>
+  none;'>ã€€</td>
   <td>37,414,335 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
  </tr>
  <tr style='height:27.0pt'>
-  <td>2019Äê6ÔÂ</td>
+  <td>2019å¹´6æœˆ</td>
   <td>30,905,625 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>8,462,085 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>28 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>22,443,540 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>618,113 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;color:#9C0006;
   font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
-  none;'>¡¡</td>
+  none;'>ã€€</td>
   <td>45,876,420 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
  </tr>
  <tr style='height:27.0pt'>
-  <td>2019Äê7ÔÂ</td>
+  <td>2019å¹´7æœˆ</td>
   <td>37,082,590 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>9,319,005 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>31 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>27,763,585 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>741,652 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;color:#9C0006;
   font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
-  none;'>¡¡</td>
+  none;'>ã€€</td>
   <td>55,195,425 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
  </tr>
  <tr style='height:27.0pt'>
-  <td>2019Äê8ÔÂ</td>
+  <td>2019å¹´8æœˆ</td>
   <td>43,866,540 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>10,175,925 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>34 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>33,690,615 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>877,331 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;color:#9C0006;
   font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
-  none;'>¡¡</td>
+  none;'>ã€€</td>
   <td>65,371,350 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
  </tr>
  <tr style='height:27.0pt'>
-  <td>2019Äê9ÔÂ</td>
+  <td>2019å¹´9æœˆ</td>
   <td>51,543,115 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>11,354,190 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>38 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>40,188,925 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>1,030,862 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;color:#9C0006;
   font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
-  none;'>¡¡</td>
+  none;'>ã€€</td>
   <td>76,725,540 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
  </tr>
  <tr style='height:27.0pt'>
-  <td>2019Äê10ÔÂ</td>
+  <td>2019å¹´10æœˆ</td>
   <td>59,898,085 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>12,532,455 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>42 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>47,365,630 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>1,197,962 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;color:#9C0006;
   font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
-  none;'>¡¡</td>
+  none;'>ã€€</td>
   <td>89,257,995 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
  </tr>
  <tr style='height:27.0pt'>
-  <td>2019Äê11ÔÂ</td>
+  <td>2019å¹´11æœˆ</td>
   <td>70,002,600 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>14,674,755 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>49 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>55,327,845 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;
   color:#9C0006;font-weight:400;text-decoration:none;text-underline-style:none;
-  text-line-through:none;'>¡¡</td>
+  text-line-through:none;'>ã€€</td>
   <td>1,400,052 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td style='font-size:12.0pt;color:#9C0006;
   font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
-  none;'>¡¡</td>
+  none;'>ã€€</td>
   <td>103,932,750 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
  </tr>
  <tr style='height:27.0pt'>
-  <td>2019Äê12ÔÂ</td>
+  <td>2019å¹´12æœˆ</td>
   <td>80,464,165 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td>16,067,250 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td>54 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td>64,396,915 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td>1,609,283 </td>
-  <td>¡¡</td>
-  <td>¡¡</td>
-  <td>¡¡</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
+  <td>ã€€</td>
   <td>120,000,000 </td>
-  <td>¡¡</td>
+  <td>ã€€</td>
  <![if supportMisalignedColumns]>
  <tr style='display:none'>
   <td width=6 style='width:5pt'></td>
@@ -456,3 +503,27 @@
  </tr>
  <![endif]>
 </table>
+                    '''
+    try:
+        # else:
+        #     onestring = 'æŸ¥è¯¢æ— ç»“æœï¼Œè¯·æ£€æŸ¥ä»»åŠ¡æ‰§è¡Œæƒ…å†µï¼Œè°¢è°¢!'
+        msg = MIMEText(sheetstring, 'html', 'utf-8')
+        msg['From'] = u'<%s>' % from_addr
+        msg['To'] = to_addr
+        msg['Cc'] = from_addr
+        msg['Subject'] = u'%s' % subject
+        smtp = smtplib.SMTP_SSL(mailServer, mailPort)
+        smtp.login(from_addr, password)
+        smtp.sendmail(from_addr, to_addr, msg.as_string())
+        logger.info(u'é‚®ä»¶å‘é€æˆåŠŸ....')
+        return True
+    except Exception, e:
+        logger.error(e, exc_info=True)
+        return False
+
+
+if __name__ == "__main__":
+    if send_email(fromaddr, toaddr, submit, from_pw):
+        print 'é‚®ä»¶å‘é€æˆåŠŸï¼'
+    else:
+        print 'é‚®ä»¶å‘é€å¤±è´¥ï¼Œè¯·æ£€æŸ¥ç¨‹åºï¼Œè°¢è°¢ï¼'

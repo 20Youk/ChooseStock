@@ -4,7 +4,7 @@
 import MySQLdb
 import xlsxwriter
 
-filePath = '../../file/SupplierInfo20180716.xlsx'
+filePath = '../../file/UnvoiceInfo20190221.xlsx'
 host = '39.108.218.254'
 user = 'root'
 ps = 'Gccf,1234'
@@ -12,8 +12,12 @@ db = 'GCCFSI'
 db = MySQLdb.connect(host, user, ps, db, charset='utf8')
 db.autocommit(on=True)
 cursor = db.cursor()
-sql = '''select SupplierName,Industry
-from SupplierInfo
+sql = '''select GoodName 品名,
+Unit 单位,
+  Amount 数量,
+  UnitPrice 单价
+from InvoiceGoods
+where InvoiceNum is not NULL
 '''
 
 

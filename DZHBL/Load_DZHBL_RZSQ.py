@@ -39,7 +39,7 @@ def write_to_excel(filepath, data, field):
     for i in range(0, len(field)):
         ws.write(0, i, field[i][0], newstyle)
     for i in range(0, len(data)):
-        print data[i -1][11], type(data[i - 1][11]), not data[i - 1][11]
+        print data[i - 1][11], type(data[i - 1][11]), not data[i - 1][11]
         if data[i][11] and (not data[i - 1][11]):
             n = i
             ws.write(k, 8, u'未放款合计', sumstyle)

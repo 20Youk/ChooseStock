@@ -1,13 +1,16 @@
 <component name="ProjectDictionaryState">
   <dictionary name="Sally Wang">
     <words>
+      <w>addr</w>
       <w>alldata</w>
+      <w>allpath</w>
       <w>appcode</w>
       <w>appid</w>
       <w>appkey</w>
       <w>bodys</w>
       <w>canbao</w>
       <w>catalogpagecode</w>
+      <w>ccaddr</w>
       <w>chanquan</w>
       <w>cominfo</w>
       <w>commucation</w>
@@ -23,6 +26,8 @@
       <w>falv</w>
       <w>firmid</w>
       <w>firmiddoms</w>
+      <w>firstdata</w>
+      <w>fromaddr</w>
       <w>gccfsi</w>
       <w>huizhou</w>
       <w>jtem</w>
@@ -30,7 +35,9 @@
       <w>newstyle</w>
       <w>nrows</w>
       <w>ntable</w>
+      <w>onedata</w>
       <w>oneday</w>
+      <w>onestring</w>
       <w>opfk</w>
       <w>opration</w>
       <w>pagebar</w>
@@ -46,13 +53,18 @@
       <w>rzqr</w>
       <w>sendpost</w>
       <w>shangbiao</w>
+      <w>sheetstring</w>
       <w>shenzhen</w>
       <w>shixin</w>
       <w>showpassword</w>
+      <w>smtp</w>
+      <w>sqlpassword</w>
       <w>sumstyle</w>
       <w>taizhang</w>
       <w>tddom</w>
       <w>testbook</w>
+      <w>textstring</w>
+      <w>toaddr</w>
       <w>totalpage</w>
       <w>vftpuser</w>
       <w>vleft</w>
