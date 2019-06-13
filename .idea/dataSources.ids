@@ -312,41 +312,56 @@ RMonth</columns>
       <column id="101" parent="9" name="InvoiceDate">
         <data-type>date</data-type>
       </column>
-      <index id="102" parent="9" name="InvoiceCode">
-        <columns>InvoiceCode
-InvoiceNum</columns>
-        <desc-columns></desc-columns>
-        <unique>1</unique>
-      </index>
-      <key id="103" parent="9" name="InvoiceCode">
-        <columns>InvoiceCode
-InvoiceNum</columns>
-        <underlying-index>InvoiceCode</underlying-index>
+      <column id="102" parent="9" name="UpdateTime">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="103" parent="9" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(20)</data-type>
+      </column>
+      <key id="104" parent="9" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
       </key>
-      <column id="104" parent="10" name="GoodName">
+      <column id="105" parent="10" name="GoodName">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="105" parent="10" name="Unit">
+      <column id="106" parent="10" name="Unit">
         <data-type>varchar(30)</data-type>
       </column>
-      <column id="106" parent="10" name="Amount">
+      <column id="107" parent="10" name="Amount">
         <data-type>float</data-type>
       </column>
-      <column id="107" parent="10" name="UnitPrice">
+      <column id="108" parent="10" name="UnitPrice">
         <data-type>float</data-type>
       </column>
-      <column id="108" parent="10" name="Price">
+      <column id="109" parent="10" name="Price">
         <data-type>float</data-type>
       </column>
-      <column id="109" parent="10" name="TaxRate">
+      <column id="110" parent="10" name="TaxRate">
         <data-type>float</data-type>
       </column>
-      <column id="110" parent="10" name="Tax">
+      <column id="111" parent="10" name="Tax">
         <data-type>float</data-type>
       </column>
-      <column id="111" parent="10" name="InvoiceNum">
+      <column id="112" parent="10" name="InvoiceNum">
         <data-type>char(100)</data-type>
       </column>
+      <column id="113" parent="10" name="Updatetime">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="114" parent="10" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(20)</data-type>
+      </column>
+      <key id="115" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
     </database-model>
   </data-source>
   <data-source name="PostgreSQL - factoring@112.74.42.22" uuid="6d93c6e6-0a98-4f2b-a16c-fccba41095ed">

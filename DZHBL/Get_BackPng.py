@@ -4,9 +4,10 @@
 import os
 import urllib
 import xlrd
+import time
 
 
-def save_img(img_url, file_name, file_path='../../file/image'):
+def save_img(img_url, file_name, file_path='../../file/image/%s' % time.strftime('%Y%m%d')):
     # 保存图片到磁盘文件夹 file_path中，默认为当前脚本运行目录下的 book\img文件夹
     try:
         if not os.path.exists(file_path):
@@ -32,5 +33,5 @@ if __name__ == '__main__':
     urlList = rs.col_values(4, start_rowx=1)
     for i in range(0, len(codeList)):
         save_img(urlList[i], str(int(codeList[i])))
-        print '完成第%d个图片下载...' % i
+        print '完成第%d个图片下载...' % (i + 1)
     print "DONE!!!"

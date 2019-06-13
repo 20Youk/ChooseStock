@@ -1,28 +1,21 @@
 # -*- coding:utf-8 -*-
 # Author:Lu
 # 应用:
-import win32api
-import win32con
-from tkinter import *
-
-root = Tk()
-root.title("你好吗")
-root.geometry('300x300')                 # 是x 不是*
+from scipy import optimize
 
 
-l1 = Label(root, text="请输入你的名字：")
-l1.pack()  # 这里的side可以赋值为LEFT RTGHT TOP  BOTTOM
-xls_text = StringVar()
-xls = Entry(root, textvariable=xls_text)
-xls_text.set(" ")
-xls.pack()
+def xnpv(rate, cashflows):
+    return sum([cf/(1+rate)**((t-cashflows[0][0]).days/365.0) for (t,cf) in cashflows])
 
 
-def on_click():
-    x = xls_text.get()
-    string = u"\u963f\u868c:\n\n    \u6211\u89c9\u5f97\u4f60\u957f\u5f97\u5f88\u597d\u770b\n\n                      \u5c0f\u9e7f"
-    win32api.MessageBox(0, string, u'这是真的', win32con.MB_OK)
+def xirr(cashflows, guess=0.1):
+    try:
+        return optimize.newton(lambda r: xnpv(r,cashflows),guess)
+    except:
+        print('Calc Wrong')
 
-Button(root, text="press", command=on_click).pack()
-
-root.mainloop()
+from datetime import datetime
+tas = [(datetime(2010, 12, 29, 0, 0), -10000), (datetime(2012, 1, 25, 0, 0), 20), (datetime(2012, 3, 8, 0, 0), 10100)]
+print xirr(tas)
+print "done"
+#  0.0100612640381

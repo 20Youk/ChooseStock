@@ -13,13 +13,14 @@ import socket
 # driver.set_page_load_timeout(30)
 socket.setdefaulttimeout(30)
 
-star_list = ['star4', 'star5']
+star_list = [ 'star5']
 star_dict = {'star3': u'三星级',
              'star4': u'四星级',
              'star5': u'五星级'}
-area_list = ['hangzhou17', 'chongqing4', 'suzhou14', "xi'an10", 'sanya43', 'wuhan477', 'nanjing12', 'guilin33',
-             'changsha206', 'ningbo375', 'qingdao7', 'dongguan223', 'xiamen25', 'tianjin3', 'shenzhen30',
-             'guangzhou32', 'foshan251', 'huizhou299', 'zhuhai31']
+# area_list = ['hangzhou17', 'chongqing4', 'suzhou14', "xi'an10", 'sanya43', 'wuhan477', 'nanjing12', 'guilin33',
+#              'changsha206', 'ningbo375', 'qingdao7', 'dongguan223', 'xiamen25', 'tianjin3', 'shenzhen30',
+#              'guangzhou32', 'foshan251', 'huizhou299', 'zhuhai31']
+area_list = ['zhongshan553', 'jiangmen316', 'zhaoqing552']
 file_path = '../file/hotel_list.xls'
 
 
