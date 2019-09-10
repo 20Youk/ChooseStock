@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3819307269">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="SQL Server (Microsoft) - PortfolioData@winserver2016" uuid="8db1f371-6aeb-4b47-bcde-c307725bce93">
       <driver-ref>sqlserver.ms</driver-ref>
       <synchronize>true</synchronize>
@@ -12,7 +12,6 @@
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://39.108.218.254:3306/GCCFSI</jdbc-url>
-      <default-dialect>MySQL</default-dialect>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
@@ -26,6 +25,20 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://112.74.42.22:64321/factoring</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Baoli" uuid="114d9af3-7d5b-44f6-b062-0527940b5fb2">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://112.74.42.22:31306/factoring?useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=round</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="CONVERT_TO_NULL" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
     </data-source>
   </component>
 </project>

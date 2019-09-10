@@ -2,19 +2,40 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="SQL Server (Microsoft) - PortfolioData@winserver2016" uuid="8db1f371-6aeb-4b47-bcde-c307725bce93">
-      <secret-storage>memory</secret-storage>
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MSSQL" exact-version="0" />
     </data-source>
     <data-source name="MySQL - GCCFSI@39.108.218.254" uuid="3bac79a5-7dcd-43cf-b133-eea56b5e8f4d">
+      <database-info product="MySQL" version="5.5.60" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )" dbms="MYSQL" exact-version="5.5.60">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-pattern>GCCFSI.*</schema-pattern>
-      <default-schemas>GCCFSI.*</default-schemas>
+      <introspection-schemas>*:GCCFSI</introspection-schemas>
+      <resolve-scope>*:GCCFSI</resolve-scope>
+      <unqualified-resolve-schemas>*:GCCFSI</unqualified-resolve-schemas>
     </data-source>
     <data-source name="PostgreSQL - factoring@112.74.42.22" uuid="6d93c6e6-0a98-4f2b-a16c-fccba41095ed">
+      <database-info product="PostgreSQL" version="11.0 (Debian 11.0-1.pgdg90+2)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2" dbms="POSTGRES" exact-version="11.0">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>dolphindata</user-name>
-      <schema-pattern>factoring.pg_catalog factoring.public</schema-pattern>
-      <default-schemas>factoring.public</default-schemas>
+      <introspection-schemas>factoring:pg_catalog,public</introspection-schemas>
+      <resolve-scope>factoring:public</resolve-scope>
+      <unqualified-resolve-schemas>factoring:public</unqualified-resolve-schemas>
+    </data-source>
+    <data-source name="Baoli" uuid="114d9af3-7d5b-44f6-b062-0527940b5fb2">
+      <database-info product="MySQL" version="8.0.13" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)" dbms="MYSQL" exact-version="8.0.13" exact-driver-version="8.0">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>factoring_data</user-name>
+      <introspection-schemas>*:@</introspection-schemas>
     </data-source>
   </component>
 </project>

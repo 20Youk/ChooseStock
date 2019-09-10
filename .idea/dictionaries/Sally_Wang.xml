@@ -9,7 +9,9 @@
       <w>appcode</w>
       <w>appid</w>
       <w>appkey</w>
+      <w>baidu</w>
       <w>bodys</w>
+      <w>btotal</w>
       <w>canbao</w>
       <w>cashflows</w>
       <w>catalogpagecode</w>
@@ -27,6 +29,7 @@
       <w>doms</w>
       <w>emaildom</w>
       <w>encodestr</w>
+      <w>endday</w>
       <w>falv</w>
       <w>fapiao</w>
       <w>firmid</w>
@@ -40,6 +43,7 @@
       <w>goodsdata</w>
       <w>hmailserver</w>
       <w>huizhou</w>
+      <w>imgcount</w>
       <w>intom</w>
       <w>inve</w>
       <w>jtem</w>
@@ -59,6 +63,7 @@
       <w>pagebar</w>
       <w>personlist</w>
       <w>phonedom</w>
+      <w>picpath</w>
       <w>postdata</w>
       <w>qichacha</w>
       <w>querys</w>
@@ -93,6 +98,7 @@
       <w>xfbankname</w>
       <w>xirr</w>
       <w>xnpv</w>
+      <w>xobject</w>
       <w>zhengshu</w>
       <w>zhixing</w>
       <w>zhuanli</w>
